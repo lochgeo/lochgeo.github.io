@@ -1,0 +1,9 @@
+name: lochgeo's blog
+url: http://lochgeo.in
+description: Another attempt at a static blog
+
+permalink: /:year/:month/:day/:title/
+paginate: 5
+pygments: true
+
+exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
