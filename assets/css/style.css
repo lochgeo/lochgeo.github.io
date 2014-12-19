@@ -33,7 +33,7 @@ table {
 /*** Basics ***/
 body {
 	font-family: Verdana, serif;
-	font-size: 16px;
+	font-size: 20px;
 	line-height: 1.7;
 }
 
@@ -77,15 +77,15 @@ acronym, abbr {
 
 
 h1 {
-	font-size: 17px;
+	font-size: 2em;
 	margin: 0 0 10px 0;
 }
 h2 {
-	font-size: 15px;
+	font-size: 1.5em;
 	margin: 0 0 10px 0;
 }
 h3 {
-	font-size: 14px;
+	font-size: 1.2em;
 	margin: 0 0 10px 0;
 }
 
@@ -109,13 +109,13 @@ h3 {
 
 /*** Structure ***/
 #page {
-	width: 700px;
+	width: 800px;
 	margin: 0 auto;
 	position: relative;
 }
 
 #header {
-	width: 700px;
+	width: 800px;
 	margin: 40px auto 50px auto;
 }
 #header h1 {
@@ -127,7 +127,7 @@ h3 {
 }
 
 #footer {
-	width: 700px;
+	width: 800px;
 	margin: 50px auto 20px auto;
 	padding-top: 10px;
 	font-size: 0.85em;
@@ -135,14 +135,14 @@ h3 {
 }
 
 #content {
-	width: 700px;
+	width: 800px;
 	margin: 0 auto;
 }
 
 #sidebar {
 	position: absolute;
 	text-align: right;
-	width: 160px;
+	width: 180px;
 	top: 0;
 	left: -240px;
 }
