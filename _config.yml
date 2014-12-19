@@ -1,5 +1,5 @@
 name: lochgeo's blog
-url: http://lochgeo.in
+url: http://lochgeo.github.io
 description: Another attempt at a static blog
 
 permalink: /:year/:month/:day/:title/
