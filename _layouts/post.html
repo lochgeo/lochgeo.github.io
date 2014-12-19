@@ -14,7 +14,7 @@ layout: default
 
 	<div class="post-content">{{ content }}</div>
 	
-	{% include comments.html %}
+	<div class="post-content">{% include comments.html %}</div>
 
 	<p class="meta">Posted on <span class="postdate">{{ page.date | date: "%b %d, %Y" }}</span></p>
 
