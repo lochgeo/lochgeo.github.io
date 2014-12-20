@@ -116,7 +116,7 @@ h3 {
 
 #header {
 	width: 870px;
-	margin: 40px auto 50px auto;
+	margin: 140px auto 50px auto;
 }
 #header h1 {
 	font-size: 2em;
@@ -136,7 +136,7 @@ h3 {
 }
 
 #content {
-	width: 670px;
+	width: 720px;
 	margin: 0 auto;
 	float:right;
 }
@@ -144,7 +144,7 @@ h3 {
 #sidebar {
 	position: relative;
 	text-align: right;
-	width: 200px;
+	width: 150px;
 	top: 0;
 	left: -40px;
 	float:left;
