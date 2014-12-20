@@ -251,11 +251,11 @@ img.center {
 /*** Icons ***/
 @font-face {
   font-family: 'solarthemeicons';
-  src: url('../fonts/solarthemeicons.eot');
-  src: url('../fonts/solarthemeicons.eot#iefix') format('embedded-opentype'),
-       url('../fonts/solarthemeicons.woff') format('woff'),
-       url('../fonts/solarthemeicons.ttf') format('truetype'),
-       url('../fonts/solarthemeicons.svg#solarthemeicons') format('svg');
+  src: url('/assets/fonts/solarthemeicons.eot');
+  src: url('/assets/fonts/solarthemeicons.eot#iefix') format('embedded-opentype'),
+       url('/assets/fonts/solarthemeicons.woff') format('woff'),
+       url('/assets/fonts/solarthemeicons.ttf') format('truetype'),
+       url('/assets/fonts/solarthemeicons.svg#solarthemeicons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
