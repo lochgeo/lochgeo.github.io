@@ -112,6 +112,7 @@ h3 {
 	width: 800px;
 	margin: 0 auto;
 	position: relative;
+	float:left;
 }
 
 #header {
@@ -142,9 +143,8 @@ h3 {
 #sidebar {
 	position: absolute;
 	text-align: right;
-	width: 240px;
-	top: 0;
-	left: -240px;
+	width: 200px;
+	float:right;
 }
 
 #sidebar li {
