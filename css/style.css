@@ -132,6 +132,7 @@ h3 {
 	padding-top: 10px;
 	font-size: 0.85em;
 	border-top: 1px solid #073642;
+	clear:both;
 }
 
 #content {
@@ -145,7 +146,7 @@ h3 {
 	text-align: right;
 	width: 200px;
 	top: 0;
-	left: -10px;
+	left: -40px;
 	float:left;
 }
 
