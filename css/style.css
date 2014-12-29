@@ -115,10 +115,8 @@ h3 {
 }
 
 #header {
-	width: 870px;
 	margin: 50px auto 50px 20px;
 	text-align: center;
-	position: relative;
 }
 #header h1 {
 	font-size: 2em;
@@ -129,7 +127,6 @@ h3 {
 }
 
 #footer {
-	width: 870px;
 	margin: 50px auto 20px 20px;
 	padding-top: 10px;
 	font-size: 0.85em;
