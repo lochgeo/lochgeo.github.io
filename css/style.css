@@ -118,6 +118,7 @@ h3 {
 	width: 870px;
 	margin: 50px auto 50px 20px;
 	text-align: center
+	position: relative;
 }
 #header h1 {
 	font-size: 2em;
