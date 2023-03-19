@@ -1,63 +1,44 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+
 <head>
-
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ page.title }}</title>
-  <meta name="viewport" content="width=device-width">
-
-  <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
-
-  <link href="/css/style.css" rel="stylesheet" />
-  <link href="/css/colors-dark.css" rel="stylesheet" />
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 
 <body>
 
-
-
-  <header id="header">
-    <h1><a href="/"><i class="icon-sun"></i> {{ site.name }}</a></h1>
-    <p>{{ site.description }}</p>
-  </header>
-
-  <div id="page">
-
-    <div id="sidebar">
-      <nav>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/archives">Archive</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="http://twitter.com/lochgeo">Twitter</a></li>
-          <li><a href="/atom.xml">Feed</a></li>
-        </ul>
-      </nav>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">{{ site.name }}</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="/about">About</a>
+          <a class="nav-link" href="/archive.html">Archives</a>
+        </div>
     </div>
+  </nav>
 
-    <div id="content">
-      {{ content }}
-    </div>
-
+  <div id="container">
+    {{ content }}
   </div>
 
   <footer id="footer">
-    <p class="copyright">Copyright &copy; {{ site.time | date: '%Y' }} {{ site.name }}. Powered by <a href="http://jekyllrb.com">Jekyll</a>, theme by <a href="https://github.com/mattvh/solar-theme-jekyll">Matt Harzewski</a></p>
+    <p class="copyright">Copyright &copy; {{ site.time | date: '%Y' }} {{ site.name }}. Powered by <a
+        href="http://jekyllrb.com">Jekyll</a>
+    </p>
   </footer>
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-  <script src="/js/jquery.mobilemenu.min.js"></script>
-
-  <script>
-    $(document).ready(function(){
-      $('#sidebar nav ul').mobileMenu({'topOptionText': 'Menu', 'prependTo': '#sidebar nav'});
-    });
-  </script>
-
-
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
