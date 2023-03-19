@@ -14,8 +14,9 @@ title: lochgeo's blog
 {% endfor %}
 
 {% if paginator.total_pages > 1 %}
+<hr>
 <nav aria-label="Page navigation example">
-	<ul class="pagination">
+	<ul class="pagination justify-content-center">
 		{% if paginator.previous_page %}
 		{% if paginator.page == 2 %}
 		<li class="page-item">
