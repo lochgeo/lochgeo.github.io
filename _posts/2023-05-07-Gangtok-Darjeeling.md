@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Mesmerising Mountains - Our trip to Gangtok & Darjeeling"
-date:   2023-05-07 10:12:00
+date:   2023-05-07 00:12:00
 comments: True
 ---
 
