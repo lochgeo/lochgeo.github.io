@@ -3,6 +3,7 @@ layout: post
 title:  "Modernizing the Beast"
 date:   2023-03-01 12:14:00
 comments: True
+categories: [Software, Architecture, Modernization]
 ---
 
 Legacy software is a critical part of many businesses and in many cases there is no business without legacy software. Legacy systems are often referred to as "legacy" because they're built using old and outdated technology, however it does not mean that these systems do not provide value. 

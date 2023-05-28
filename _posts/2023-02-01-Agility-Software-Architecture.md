@@ -3,6 +3,7 @@ layout: post
 title:  "Agility in Software Architectures"
 date:   2023-02-01 10:34:00
 comments: True
+categories: [Software, Architecture]
 ---
 
 Agile software architecture is a way of designing and developing software systems that embraces change, feedback, and collaboration. It is based on the idea that architecture is not a fixed and upfront activity, but rather an ongoing and emergent process that evolves with the needs of the customers and the environment. Agile architecture aims to balance several aspects of software development, such as functionality, quality, performance, scalability, security, usability, and maintainability. It also considers other factors that affect the delivery of software solutions, such as testability, deployability, operability, and observability. Agile architecture follows some key principles and practices that guide its implementation. Some of these are:

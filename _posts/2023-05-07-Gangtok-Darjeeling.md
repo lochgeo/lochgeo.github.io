@@ -3,6 +3,7 @@ layout: post
 title:  "Mesmerising Mountains - Our trip to Gangtok & Darjeeling"
 date:   2023-05-07 00:12:00
 comments: True
+categories: [Experiences, Travel]
 ---
 
 Our trip to Gangtok started with a lot of excitement and anxiety. Our cab driver was late to pick us up from home, so we had to rush to the airport. At the airport, we met Dipu uncle and his family, who were also going to Gangtok with us. We boarded the flight to Bagdogra just in time, after a confusion with change of gates at the last moment by the airlines company. The flight was smooth and we enjoyed the view of the mountains from the window. We landed in Bagdogra ahead of time and collected our checked-in bags. Since Bagdogra is a military airport, we were asked not to take any pictures in the airport. After landing in Bagdogra, we took a taxi to Gangtok. On the way, we stopped at Santa Banta Dhaba, where we had some delicious breakfast. The drive was very long, about five hours, but we had fun chatting along the way. Finally, we reached Gangtok and checked into our hotel – “The Muscatel Grand Silk Route”. The hotel was a nice and comfy, but the road leading to the hotel was anything but. The 200m of the road from MG Marg to the hotel was a steep downward section with a shard hairpin bend included. Anyone who learns to drive in Gangtok is surely an expert!
