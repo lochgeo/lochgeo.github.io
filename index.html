@@ -1,61 +1,49 @@
 ---
 layout: default
-title: lochgeo's blog
 ---
 
-{% for post in paginator.posts %}
+<div class="posts">
+  {% for post in paginator.posts %}
+    <article class="post">
+      <a href="{{ site.baseurl }}{{ post.url }}">
+        <h1>{{ post.title }}</h1>
 
-<article class="row mt-5">
-	<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-	<div class="post-content">{{ post.content }}</div>
-	<p>Posted on <span>{{ post.date | date: "%b %d, %Y" }}</span></p>
-</article>
+        <div>
+          <p class="post_date">{{ post.date | date: "%B %e, %Y" }}</p>
+        </div>
+      </a>
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
 
-{% endfor %}
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    </article>
+  {% endfor %}
 
-{% if paginator.total_pages > 1 %}
-<hr>
-<nav aria-label="Page navigation example">
-	<ul class="pagination justify-content-center">
-		{% if paginator.previous_page %}
-		{% if paginator.page == 2 %}
-		<li class="page-item">
-			<a class="page-link" href="/" aria-label="Previous">
-				<span aria-hidden="true">&laquo;</span>
-			</a>
-		</li>
-		{% else %}
-		<li class="page-item">
-			<a class="page-link" href="/page{{paginator.previous_page}}/" aria-label="Previous">
-				<span aria-hidden="true">&laquo;</span>
-			</a>
-		</li>
-		{% endif %}
-		{% else %}
-		<li class="page-item disabled">
-			<a class="page-link" href="/" aria-label="Previous">
-				<span aria-hidden="true">&laquo;</span>
-			</a>
-		</li>
-		{% endif %}
+  <!-- pagination -->
+  {% if paginator.total_pages > 1 %}
+  <div class="pagination">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+    {% else %}
+      <span>&laquo; Prev</span>
+    {% endif %}
 
-		<li class="page-item"><a class="page-link" href="#"> Page {{ paginator.page }} of {{ paginator.total_pages }} </a></li>
+    {% for page in (1..paginator.total_pages) %}
+      {% if page == paginator.page %}
+        <span class="webjeda">{{ page }}</span>
+      {% elsif page == 1 %}
+        <a href="{{ '/' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+      {% else %}
+        <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+      {% endif %}
+    {% endfor %}
 
-		{% if paginator.next_page %}
-		<li class="page-item">
-			<a class="page-link" href="/page{{paginator.next_page}}/" aria-label="Next">
-				<span aria-hidden="true">&raquo;</span>
-			</a>
-		</li>
-		{% else %}
-		<li class="page-item disabled">
-			<a class="page-link" href="/" aria-label="Next">
-				<span aria-hidden="true">&raquo;</span>
-			</a>
-		</li>
-		{% endif %}
-	</ul>
-</nav>
-{% endif %}
-
-<article class="row mb-5"><p></p></article>
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+    {% else %}
+      <span>Next &raquo;</span>
+    {% endif %}
+  </div>
+  {% endif %}
+</div>
