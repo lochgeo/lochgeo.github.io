@@ -4,9 +4,9 @@ title: About
 permalink: /about/
 ---
 
-I am a software developer from Bangalore, India.
+> {% include pullquote.html quote="People think that computer science is the art of geniuses but the actual reality is the opposite, just many people doing things that build on each other, like a wall of mini stones - Donald Knuth" %}
 
-{% include pullquote.html quote="People think that computer science is the art of geniuses but the actual reality is the opposite, just many people doing things that build on each other, like a wall of mini stones - Donald Knuth" %}
+I am a software developer from Bangalore, India.
 
 I have been working in the IT industry for over 18 years and I specialize in cloud technologies. I am passionate about using cloud solutions to improve the efficiency, security and scalability of banking applications. I have experience in developing and deploying cloud-based applications using various platforms and tools, such as Docker, Kubernetes, etc. I also have skills in programming languages such as Python, C#, etc. 
 
