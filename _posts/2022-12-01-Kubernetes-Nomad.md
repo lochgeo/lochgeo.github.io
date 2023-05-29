@@ -20,7 +20,7 @@ Here is a quick comparison of the two platforms:
 - **Simplicity**: Nomad is a single binary that requires no external services for coordination or storage, while Kubernetes is a collection of more than a half-dozen interoperating services that require etcd for coordination and storage.
 - **Flexibility**: Nomad can manage containers and non-container workloads, such as Java, IIS on Windows, Qemu, etc., while Kubernetes is primarily designed to manage containers.
 - **Consistency**: Nomad can be deployed in local dev, production, on-prem, at the edge and in the cloud in a consistent manner, while Kubernetes has different distributions for different environments, such as minikube, kubeadm, k3s, etc., which may lead to inconsistency in capabilities, configuration and management.
-- **Scalability**: Nomad claims to support clusters up to 10,000 nodes and 1 million allocations with sub-second scheduling latency², while Kubernetes supports clusters up to 5000 nodes and 300,000 total containers.
+- **Scalability**: Nomad claims to support clusters up to 10,000 nodes and 1 million allocations with sub-second scheduling latency, while Kubernetes supports clusters up to 5000 nodes and 300,000 total containers.
 
 Ultimately, the best choice for you will depend on your specific needs and requirements. If you are looking for a mature, widely used platform with a large community and a lot of resources, then Kubernetes is a good option. If you are looking for a simpler, easier to use platform with more flexibility, then Nomad is a good option.
 
