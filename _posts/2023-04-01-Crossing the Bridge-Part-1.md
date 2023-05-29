@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Crossing the Bridge : Challenges of transitioning from an Individual Contributor to Management Role"
-date:   2023-04-01 12:14:00
+date:   2023-04-19 14:43:00
 comments: True
 categories: [Experiences, Thoughts]
 ---
