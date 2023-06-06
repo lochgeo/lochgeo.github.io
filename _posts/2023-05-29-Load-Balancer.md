@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Load Balancing: A Balancing Act"
+title:  "Load Balancing - A Balancing Act"
 date:   2023-05-29 12:22:00
 comments: True
 categories: [Software, Cloud]
