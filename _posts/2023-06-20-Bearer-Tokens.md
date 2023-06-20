@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Bearer, pop the tokens"
-date:   2023-06-23 01:22:00
+date:   2023-06-20 01:22:00
 comments: True
 categories: [Software, Security]
 ---
