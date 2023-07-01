@@ -12,4 +12,4 @@ Transformer models are typically composed of two parts: an encoder and a decoder
 
 I am a total noob in this area and the video linked below gave me a good introduction to the Transformer architecture. Andrej explains the basic concepts of Transformer models in a clear and concise way. He also provides complete code for implementing a Transformer model in PyTorch. Its a good introduction for anyone wondering all the fuss is about generative AI.
 
-<iframe width="660" height="385" src="https://www.youtube.com/embed/kCc8FmEb1nY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="480" height="320" src="https://www.youtube.com/embed/kCc8FmEb1nY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
