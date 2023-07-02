@@ -7,7 +7,7 @@ categories: [Software, Debugging]
 excerpt_separator: "<!--more-->"
 ---
 
-One of my strengths at work is debugging/troubleshooting technical issues. I have been told that I have a knack for finding and fixing problems that others find hard to solve. Many people come to me for assistance when they encounter difficulties and I often give them effective solutions or workarounds that allow them to continue their work. Some of them attribute my success to a “magic” power that I have, which is based on my good “memory” (subject of many memes at work) and ability to recall details about systems that I worked on long ago. However, there is nothing magical about what I do. It is simply a result of practice and experience in dealing with technical challenges. There are a few core ideas that underpin these abilities, some of which I try to enumerate below
+One of my strengths at work is debugging/troubleshooting technical issues. I have been told that I have a knack for finding and fixing problems that others find hard to solve. Many people come to me for assistance when they encounter difficulties and I often am able to give them effective solutions or workarounds that allow them to continue their work. This is an ability that has come with a lot of practice and experience in dealing with technical challenges. There are a few core ideas that underpin these abilities, some of which I try to enumerate below
 
 <!--more-->
 
