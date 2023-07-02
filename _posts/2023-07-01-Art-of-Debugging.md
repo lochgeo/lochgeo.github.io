@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The art of debugging"
+title:  "The Art of Debugging"
 date:   2023-07-01 01:22:00
 comments: True
 categories: [Software, Debugging]
