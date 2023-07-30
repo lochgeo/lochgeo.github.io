@@ -37,7 +37,7 @@ Next we need to install rancher and use the network that we created above. The [
 
 After having set a etc/hosts file entry for rancher.docker.internal to point to 127.0.0.1, I opened up https://rancher.docker.internal/. After accepting the security risk of unknown certificate and then finding the bootstrap password from the container logs and then setting a new admin password - here I was looking at the rancher dashboard and I already had my "local" kubernetes cluster up and running. 
 
-![Rancher Dashboard default](/assets/images/rancher_1.jpg "Rancher Dashboard with the default local cluster")
+![Rancher Dashboard default](/images/rancher_1.jpg "Rancher Dashboard with the default local cluster")
 
 Now to setup our k3d cluster. There are several ways to install k3d on your machine. On Windows, the easiest was to use the chocolatey choco install k3d
 
@@ -116,6 +116,6 @@ There is a whole bunch of information here, but the critical part is the NodeHos
 
 As you can see, rancher installs a bunch of tools in the cattle-system namespace to manage the newly added cluster. Give it a couple of minutes for all the pods to spin up and you should start seeing the new cluster on the rancher gui
 
-![Rancher Dashboard mykube](/assets/images/rancher_2.jpg "Rancher Dashboard now shows the imported cluster")
+![Rancher Dashboard mykube](/images/rancher_2.jpg "Rancher Dashboard now shows the imported cluster")
 
 Now you are all set to manage the cluster using rancher. 
