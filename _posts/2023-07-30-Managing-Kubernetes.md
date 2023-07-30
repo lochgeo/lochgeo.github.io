@@ -7,7 +7,7 @@ categories: [Software, Containers, Kubernetes]
 excerpt_separator: "<!--more-->"
 ---
 
-According to kubernetes.io, kubernetes is {% include pullquote.html quote="Kubernetes, also known as K8s, is an open-source system for automating deployment, scaling and management of containerized applications" %}
+According to kubernetes.io, {% include pullquote.html quote="Kubernetes, also known as K8s, is an open-source system for automating deployment, scaling and management of containerized applications" %}
 
 Kubernetes is the defacto container orchestration platform today. It is a powerful tool that can help you manage your applications more efficiently and reliably. Kubernetes uses a declarative approach to configuration, which means that you define the desired state of your application and Kubernetes will work to make sure that the actual state matches the desired state. This makes it easy to deploy changes to your applications and to scale your applications up or down as needed. 
 
