@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Impostor Syndrome : Am I good enough?"
-date:   2023-07-30 01:22:00
+date:   2024-05-05 11:22:00
 comments: True
 categories: [Software, Personal Development]
 excerpt_separator: "<!--more-->"
