@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Web & AI: Lessons from Web Apps for the coming AI Era"
-date:   2024-05-17 11:22:00
+date:   2024-05-17 07:22:00
 comments: True
 categories: [Software, Generative AI]
 excerpt_separator: "<!--more-->"
