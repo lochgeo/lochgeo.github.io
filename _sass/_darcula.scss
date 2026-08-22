@@ -7,24 +7,6 @@
     font-size: 95%;
 }
 
-code {
-    font-family: $font-mono;
-    color: #d8d8d8;
-}
-
-.highlighter-rouge {
-    background-color: var(--code-inline-bg);
-    color: var(--code-inline-fg);
-    border-radius: 8px;
-}
-
-// Inline (non-block) code pill
-code.highlighter-rouge {
-    padding: 0.12em 0.4em;
-    border-radius: 5px;
-    font-size: 87%;
-}
-
 .highlight .hll { background-color: #f1fa8c }
 .highlight  { background: #282a36; color: #f8f8f2 }
 .highlight .c { color: #6272a4 } /* Comment */

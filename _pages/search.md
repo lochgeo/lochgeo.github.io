@@ -15,7 +15,7 @@ permalink: /search/
     SimpleJekyllSearch({
     searchInput: document.getElementById('search-input'),
     resultsContainer: document.getElementById('results-container'),
-    searchResultTemplate: '<div class="search-result"><a href="{url}"><h1>{title}</h1></a><span>{date}</span></div>',
+    searchResultTemplate: '<div class="search-result"><a href="{url}"><h3>{title}</h3></a><span>{date}</span></div>',
     json: '{{ site.baseurl }}/search.json'
     });
 </script>
