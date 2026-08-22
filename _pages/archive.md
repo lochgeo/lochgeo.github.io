@@ -5,8 +5,8 @@ title: Archive
 ---
 
 <div class="archive">
-  {% assign years = site.posts | group_by_exp: 'post', 'post.date | date: "%Y"' %}
-  {% for year in years reversed %}
+  {% assign years = site.posts | group_by_exp: 'post', 'post.date | date: "%Y"' | sort: 'name' | reverse %}
+  {% for year in years %}
   <section class="archive-group">
     <h2 class="archive-year">{{ year.name }}<span class="archive-count">{{ year.items.size }} post{% if year.items.size != 1 %}s{% endif %}</span></h2>
     <ul class="archive-list">
