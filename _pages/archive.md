@@ -1,33 +1,24 @@
 ---
 layout: page
 permalink: /archive/
-title: Posts Archive
+title: Archive
 ---
 
-
-<div id="archives">
-  <section id="archive">
-     <h3>Most Recent Posts</h3>
-      {%for post in site.posts %}
-      {% unless post.next %}
-      <ul class="this">
-          {% else %}
-          {% capture month %}{{ post.date | date: '%B %Y' }}{% endcapture %}
-          {% capture nmonth %}{{ post.next.date | date: '%B %Y' }}{% endcapture %}
-          {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-          {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
-          {% if year != nyear %}
-      </ul>
-      <h2>{{ post.date | date: '%Y' }}</h2>
-      <ul class="past">
-          {% endif %}
-          {% if month != nmonth %}
-          <h3>{{ post.date | date: '%B %Y' }}</h3>
-          {% endif %}
-          {% endunless %}
-          <p><b><a href="{{ site.baseurl }}{{ post.url }}">{% if post.title and post.title != "" %}{{post.title}}{% else %}{{post.excerpt |strip_html}}{%endif%}</a></b> - {% if post.date and post.date != "" %}{{ post.date | date: "%e %B %Y" }}{%endif%}</p>
-          {% endfor %}
-      </ul>
-    <h3>Oldest Posts</h3>
+<div class="archive">
+  {% assign years = site.posts | group_by_exp: 'post', 'post.date | date: "%Y"' %}
+  {% for year in years reversed %}
+  <section class="archive-group">
+    <h2 class="archive-year">{{ year.name }}<span class="archive-count">{{ year.items.size }} post{% if year.items.size != 1 %}s{% endif %}</span></h2>
+    <ul class="archive-list">
+      {% for post in year.items %}
+      <li class="archive-item">
+        <a href="{{ site.baseurl }}{{ post.url }}">
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%b %-d' }}</time>
+          <span class="archive-title">{% if post.title and post.title != "" %}{{ post.title }}{% else %}{{ post.excerpt | strip_html | truncate: 80 }}{% endif %}</span>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
   </section>
+  {% endfor %}
 </div>

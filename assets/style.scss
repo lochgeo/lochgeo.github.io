@@ -159,9 +159,108 @@ table tr td :last-child {
   }
 }
 
-#archives h2,
-#archives h3 {
-  text-align: left;
+//
+// Archive
+//
+
+.archive-group {
+  margin-bottom: 34px;
+}
+
+.archive-year {
+  position: sticky;
+  top: 78px;
+  z-index: 10;
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin: 0;
+  padding: 16px 0 12px;
+  background: var(--bg);
+  font-size: 21px;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+  color: var(--heading);
+}
+
+.archive-count {
+  font-family: $font-mono;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  color: var(--muted);
+}
+
+.archive-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.archive-item {
+  border-bottom: 1px solid var(--border);
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  a {
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+    padding: 11px 2px;
+    color: var(--text);
+    text-decoration: none;
+
+    time {
+      flex: 0 0 auto;
+      width: 5rem;
+      font-family: $font-mono;
+      font-size: 13.5px;
+      letter-spacing: 0.2px;
+      font-variant-numeric: tabular-nums;
+      color: var(--muted);
+      transition: color 0.15s ease;
+    }
+
+    .archive-title {
+      transition: color 0.15s ease, transform 0.15s ease;
+    }
+
+    &:hover {
+      color: var(--accent);
+      text-decoration: none;
+
+      time {
+        color: var(--accent);
+      }
+
+      .archive-title {
+        color: var(--accent);
+        transform: translateX(4px);
+      }
+    }
+  }
+
+  @include mobile {
+    a {
+      gap: 12px;
+
+      time {
+        width: auto;
+        min-width: 50px;
+        font-size: 12.5px;
+      }
+    }
+  }
+}
+
+.archive-year {
+  @include mobile {
+    position: static;
+    font-size: 19px;
+    padding-top: 10px;
+  }
 }
 
 .not-found-image {
@@ -1305,6 +1404,17 @@ Modules - reusable parts of our design
     &:nth-child(4) { animation-delay: 0.21s; }
     &:nth-child(5) { animation-delay: 0.27s; }
     &:nth-child(6) { animation-delay: 0.33s; }
+  }
+
+  .archive-item {
+    animation: rise-in 0.45s ease backwards;
+
+    &:nth-child(1) { animation-delay: 0.03s; }
+    &:nth-child(2) { animation-delay: 0.07s; }
+    &:nth-child(3) { animation-delay: 0.11s; }
+    &:nth-child(4) { animation-delay: 0.15s; }
+    &:nth-child(5) { animation-delay: 0.19s; }
+    &:nth-child(n + 6) { animation-delay: 0.23s; }
   }
 }
 
