@@ -19,13 +19,18 @@ html {
 }
 
 body {
-  background: #fff;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  color: #404040;
+  background: var(--bg);
+  color: var(--text);
+  font-family: $sans-serif;
   line-height: 1.7;
   font-weight: 400;
   font-size: 18px;
   height: 100%;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
 }
 
 .container {
@@ -36,17 +41,16 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  color: $darkerGray;
-  font-weight: bold;
+  font-family: $sans-serif;
+  color: var(--heading);
+  font-weight: 700;
 
-  line-height: 1.7;
-  margin: 1em 0 15px;
+  line-height: 1.3;
+  margin: 1.5em 0 0.55em;
   padding: 0;
-  text-align: center;
 
   @include mobile {
-    line-height: 1.4;
+    line-height: 1.35;
   }
 }
 
@@ -54,23 +58,12 @@ h1 {
   font-size: 30px;
   a {
     color: inherit;
+    transition: color 0.15s ease;
   }
 }
 
 h2 {
   font-size: 24px;
-}
-
-@media (min-width: 769px){
-	.post h2::before, .post h2::after {
-	    content: "";
-	    display: inline-block;
-	    vertical-align: middle;
-	    width: 46px;
-	    height: 1px;
-	    background: rgb(192, 211, 218);
-	    margin: 0px 30px;
-	}
 }
 
 h3 {
@@ -79,7 +72,7 @@ h3 {
 
 h4 {
   font-size: 18px;
-  color: #222;
+  color: var(--heading);
 }
 
 p {
@@ -91,26 +84,26 @@ table {
 }
 
 table tr {
-	border-top: 1px solid #cccccc;
-	background-color: white;
+	border-top: 1px solid var(--border);
+	background-color: var(--surface);
 	margin: 0;
 	padding: 0;
 }
 
 table tr:nth-child(2n) {
-	background-color: #f8f8f8;
+	background-color: var(--surface-alt);
 }
 
 table tr th {
 	font-weight: bold;
-	border: 1px solid #cccccc;
+	border: 1px solid var(--border);
 	text-align: left;
 	margin: 0;
 	padding: 6px 13px;
 }
 
 table tr td {
-	border: 1px solid #cccccc;
+	border: 1px solid var(--border);
 	text-align: left;
 	margin: 0;
 	padding: 6px 13px;
@@ -142,11 +135,20 @@ table tr td :last-child {
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
   box-sizing: border-box;
   font-size: 18px;
-  background-color: #fff3ff;
+  font-family: $sans-serif;
+  background-color: var(--surface);
+  color: var(--text);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+
+  &:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px var(--accent-tint);
+  }
 }
 
 .search-result {
@@ -169,7 +171,7 @@ table tr td :last-child {
 
 .share-box {
   font-weight: bold;
-  color: #222;
+  color: var(--heading);
 }
 
 span[data-pullquote] {
@@ -188,16 +190,21 @@ span[data-pullquote]:before {
   padding: 0 -5% 0 0;
   font-size: 1.3em;
   font-style: italic;
-  color: green;
+  color: var(--accent);
   text-align: center;
 }
 
 a {
-  color: $blue;
+  color: var(--accent);
   text-decoration: none;
 	cursor: pointer;
+  transition: color 0.15s ease;
+
   &:hover, &:active {
-    color: $blue;
+    color: var(--accent-strong);
+    text-decoration: underline;
+    text-decoration-color: var(--accent-tint);
+    text-underline-offset: 3px;
   }
 }
 
@@ -247,17 +254,17 @@ p > img {
 
 .date {
   font-style: italic;
-  color: $gray;
+  color: var(--muted);
 }
 
 // Specify the color of the selection
 ::-moz-selection {
-  color: $black;
-  background: $lightGray;
+  color: var(--selection-fg);
+  background: var(--selection-bg);
 }
 ::selection {
-  color: $black;
-  background: $lightGray;
+  color: var(--selection-fg);
+  background: var(--selection-bg);
 }
 
 // Nicolas Gallagher's micro clearfix hack
@@ -282,92 +289,133 @@ p > img {
 
 .wrapper-masthead {
   margin-bottom: 25px;
+  position: sticky;
+  top: 0;
+  z-index: 500;
+  background: var(--header-bg);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
 }
 
 .masthead {
-  padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 13px 0;
 
   @include mobile {
+    flex-direction: column;
     text-align: center;
+    gap: 8px;
+    padding: 14px 0;
   }
 }
 
 .site-avatar {
-  float: left;
-  width: 70px;
-  height: 70px;
-  margin-right: 15px;
-
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
+  flex: 0 0 auto;
+  width: 54px;
+  height: 54px;
 
   img {
-    border-radius: 5px;
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
   }
 }
 
 .site-info {
-  float: left;
-
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
+  flex: 1 1 auto;
+  min-width: 0;
 }
 
 .site-name {
   margin: 0;
-  color: $darkGray;
+  color: var(--heading);
   cursor: pointer;
-  font-family: $helveticaNeue;
-  font-weight: 300;
-  font-size: 28px;
-  letter-spacing: 1px;
+  font-family: $sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: -0.3px;
   text-align: left;
 
+  a {
+    color: inherit;
+    transition: color 0.15s ease;
+
+    &:hover {
+      color: var(--accent);
+      text-decoration: none;
+    }
+  }
+
   @include mobile {
+    font-size: 22px;
     text-align: center;
   }
 }
 
 .site-description {
-  margin: -5px 0 0 0;
-  color: $gray;
-  font-size: 16px;
+  margin: -2px 0 0 0;
+  color: var(--muted);
+  font-size: 15px;
 
   @include mobile {
-    margin: 3px 0;
+    margin: 2px 0 0 0;
   }
 }
 
 nav {
-  float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
-  font-size: 18px;
+  margin-left: auto;
+  flex: 0 0 auto;
+  font-family: $sans-serif;
+  font-size: 16px;
 
   @include mobile {
-    float: none;
-    margin-top: 9px;
+    margin-left: 0;
     display: block;
-    font-size: 16px;
+    font-size: 15px;
   }
 
   a {
+    position: relative;
     margin-left: 20px;
-    color: $darkGray;
+    color: var(--text);
     text-align: right;
-    font-weight: 300;
-    letter-spacing: 1px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    transition: color 0.15s ease;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 100%;
+      height: 2px;
+      border-radius: 2px;
+      background: var(--accent);
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.25s ease;
+    }
+
+    &:hover {
+      color: var(--accent);
+      text-decoration: none;
+
+      &::after {
+        transform: scaleX(1);
+        transform-origin: left;
+      }
+    }
 
     @include mobile {
-      margin: 0 10px;
-      color: $blue;
+      margin: 0 9px;
+      color: var(--accent);
+
+      &::after {
+        display: none;
+      }
     }
   }
 }
@@ -377,34 +425,74 @@ nav {
 //
 
 .posts > .post {
-  padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 26px 30px 22px;
+  margin-bottom: 22px;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+
+  &:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include mobile {
+    padding: 20px 18px 16px;
+  }
 }
 
-.posts > .post:last-child {
-  padding-bottom: 1em;
-  border-bottom: none;
+.posts > .post h1 {
+  font-size: 24px;
+  line-height: 1.35;
+  margin-top: 0;
+}
+
+.posts > .post > a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+
+    h1 {
+      color: var(--accent);
+    }
+  }
+}
+
+.posts > .post .entry {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .post {
   blockquote {
-    margin: 1.8em .8em;
-    /*border-left: 2px solid $gray;*/
-    padding: 0.1em 1em;
-    color: $gray;
-    font-size: 22px;
+    margin: 1.6em 0;
+    padding: 0.7em 1.2em;
+    border-left: 4px solid var(--accent);
+    border-radius: 0 10px 10px 0;
+    color: var(--muted);
+    font-size: 20px;
     font-style: italic;
-    background-color: #ede1ff;
+    background-color: var(--accent-wash);
   }
 
   .you-may-like{
-    margin: 1.8em .8em;
-    /*border-left: 2px solid $gray;*/
-    padding: 0.1em 1em;
-    color: $gray;
-    font-size: 22px;
+    margin: 1.6em 0;
+    padding: 0.7em 1.2em;
+    border-left: 4px solid var(--accent);
+    border-radius: 0 10px 10px 0;
+    color: var(--muted);
+    font-size: 20px;
     font-style: italic;
-    background-color: #ddffb5;;
+    background-color: var(--accent-tint);
   }
 
   .comments {
@@ -412,8 +500,28 @@ nav {
   }
 
   .read-more {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 13.5px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    color: var(--accent);
+
+    &::after {
+      content: "\2192";
+      transition: transform 0.2s ease;
+    }
+
+    &:hover {
+      color: var(--accent-strong);
+      text-decoration: none;
+
+      &::after {
+        transform: translateX(4px);
+      }
+    }
   }
 }
 
@@ -431,7 +539,8 @@ nav {
   bottom: 0;
   width: 100%;
   height: 89px;
-  background-color: $lightGray;
+  background-color: var(--surface-alt);
+  border-top: 1px solid var(--border);
 }
 
 footer {
@@ -439,19 +548,9 @@ footer {
   text-align: center;
 }
 
-body:after {
-    background: linear-gradient(to right, #ffffff   0, #2196F3   33%, #E91E63   66%, #000 100%);
-    width: 100%;
-    height: 5px;
-    top: 0;
-    position: absolute;
-    left: 0;
-    content: '';
-}
-
 #bar {
-    background: #000;
-    height: 7px;
+    background: var(--bar-gradient);
+    height: 4px;
     background-size: cover;
     background-position: left 60%;
     position: fixed;
@@ -462,32 +561,30 @@ body:after {
 }
 
 .post h1{
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  text-align: center;
-  font-weight: bold;
-  font-kerning: auto;
-  font-feature-settings: "kern","liga","dlig","hlig","cswh";
-  line-height: 1.2;
+  font-family: $sans-serif;
+  text-align: left;
+  font-weight: 700;
+  font-kerning: normal;
+  line-height: 1.25;
 }
 
 .page h1{
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  text-align: center;
-  font-weight: bold;
-  font-kerning: auto;
-  font-feature-settings: "kern","liga","dlig","hlig","cswh";
-  line-height: 1.2;
+  font-family: $sans-serif;
+  text-align: left;
+  font-weight: 700;
+  font-kerning: normal;
+  line-height: 1.25;
 }
 
 .author_title{
-  text-align: center;
-  color: #939aa1;
+  text-align: left;
+  color: var(--muted);
   letter-spacing: 2px;
 }
 
 .post_date{
-  text-align: center;
-  color: #939aa1;
+  text-align: left;
+  color: var(--muted);
 }
 
 .cd-container a {
@@ -631,9 +728,9 @@ Modules - reusable parts of our design
 }
 
 .text-link {
-    color: #000;
+    color: var(--heading);
     text-decoration: none;
-    border-bottom: 1px dotted #000;
+    border-bottom: 1px dotted currentColor;
 }
 
 //carbon ads
@@ -714,31 +811,57 @@ Modules - reusable parts of our design
 
 .post-tags a {
   font-size: 14.5px;
-  padding: 2px 13px;
+  padding: 3px 14px;
   border: none;
-  background-color: #4CAF50;
+  background-color: var(--accent);
   border-radius: 50px;
-  color: #fff;
-}
+  color: var(--on-accent);
+  font-weight: 500;
+  transition: background-color 0.15s ease, transform 0.15s ease;
 
-.pagination a, .pagination span {
-  padding: 7px 18px;
-  border: 1px solid #eee;
-  margin-left: -2px;
-  margin-right: -2px;
-  background-color: #ffffff;
-  display: inline-block;
-}
-
-.pagination a {    
   &:hover {
-      background-color: #f1f1f1;
-      color: #333;
+    background-color: var(--accent-strong);
+    transform: translateY(-1px);
+    text-decoration: none;
+    color: var(--on-accent);
   }
 }
 
 .pagination {
   text-align: center;
+  margin-top: 34px;
+
+  a, span {
+    padding: 7px 16px;
+    border: 1px solid var(--border);
+    margin-left: -2px;
+    margin-right: -2px;
+    background-color: var(--surface);
+    color: var(--text);
+    display: inline-block;
+    transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+  }
+
+  a {
+    &:hover {
+      background-color: var(--accent-wash);
+      border-color: var(--accent);
+      color: var(--accent-strong);
+      text-decoration: none;
+    }
+  }
+
+  span.webjeda {
+    background-color: var(--accent);
+    border-color: var(--accent);
+    color: var(--on-accent);
+    font-weight: 600;
+  }
+
+  span:not(.webjeda) {
+    color: var(--muted);
+    cursor: default;
+  }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 759px) {
@@ -1149,6 +1272,48 @@ Modules - reusable parts of our design
     -ms-transform: translateX(0);
     -o-transform: translateX(0);
     transform: translateX(0);
+  }
+}
+
+
+//
+// MOTION
+//
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .posts > .post {
+    animation: rise-in 0.45s ease backwards;
+
+    &:nth-child(1) { animation-delay: 0.03s; }
+    &:nth-child(2) { animation-delay: 0.09s; }
+    &:nth-child(3) { animation-delay: 0.15s; }
+    &:nth-child(4) { animation-delay: 0.21s; }
+    &:nth-child(5) { animation-delay: 0.27s; }
+    &:nth-child(6) { animation-delay: 0.33s; }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
 
