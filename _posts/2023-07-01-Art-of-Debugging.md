@@ -2,7 +2,6 @@
 layout: post
 title:  "The Art of Debugging"
 date:   2023-07-01 01:22:00
-comments: True
 categories: [Software, Debugging]
 excerpt_separator: "<!--more-->"
 ---

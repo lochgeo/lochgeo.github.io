@@ -2,7 +2,6 @@
 layout: post
 title:  "Nomad & Kubernetes - David vs Goliath played out in container orchestration"
 date:   2022-12-04 12:22:00
-comments: True
 categories: [Software, Containers]
 excerpt_separator: "<!--more-->"
 ---

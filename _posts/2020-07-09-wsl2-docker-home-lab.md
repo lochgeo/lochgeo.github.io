@@ -2,7 +2,6 @@
 layout: post
 title:  "WSL 2 - Finally a Real Linux Kernel on My Windows Laptop"
 date:   2020-07-09 20:14:00
-comments: True
 categories: [Software, Containers]
 excerpt_separator: "<!--more-->"
 ---

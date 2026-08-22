@@ -2,7 +2,6 @@
 layout: post
 title:  "Agility in Software Architectures"
 date:   2023-02-03 10:34:00
-comments: True
 categories: [Software, Architecture]
 ---
 
