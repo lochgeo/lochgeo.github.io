@@ -27,9 +27,11 @@ $font-display: "Space Grotesk", ui-sans-serif, system-ui, -apple-system, "Segoe 
   }
 }
 
-// ---- Headings ----
-h1, h2, h3, h4, h5, h6 {
-  font-family: $font-display;
+// ---- Typography ----
+// One sans family site-wide; mono reserved for code + micro-labels.
+:root {
+  --pico-font-family: #{$font-display};
+  --pico-font-family-mono: #{$font-mono};
 }
 
 // ---- Header ----
