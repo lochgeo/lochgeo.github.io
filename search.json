@@ -3,11 +3,26 @@
 [
   {% for post in site.posts %}
     {
-
-      "title"    : "{% if post.title != "" %}{{ post.title | escape }}{% else %}{{ post.excerpt | strip_html |  escape | strip }}{%endif%}",
-      "url"      : "{{ site.baseurl }}{{ post.url }}",
-      "category" : "{{ post.categories | join: ', '}}",
-      "date"     : "{{ post.date | date: "%B %e, %Y" }}"
-    } {% unless forloop.last %},{% endunless %}
-  {% endfor %}
+      "title": {{ post.title | default: post.excerpt | strip_html | strip | jsonify }},
+      "url": {{ site.baseurl | append: post.url | jsonify }},
+      "category": {{ post.categories | join: ', ' | jsonify }},
+      "categories": {{ post.categories | jsonify }},
+      "date": {{ post.date | date: "%B %e, %Y" | jsonify }},
+      "date_iso": {{ post.date | date_to_xmlschema | jsonify }},
+      "excerpt": {{ post.excerpt | strip_html | strip_newlines | normalize_whitespace | truncatewords: 30 | jsonify }},
+      "content": {{ post.content | strip_html | strip_newlines | normalize_whitespace | truncatewords: 80 | jsonify }},
+      "type": {{ "post" | jsonify }}
+    }{% unless forloop.last %},{% endunless %}
+  {% endfor %}{% if site.reading.size > 0 %},{% for item in site.reading %}
+    {
+      "title": {{ item.title | jsonify }},
+      "url": {{ site.baseurl | append: item.url | jsonify }},
+      "category": {{ "Reading" | jsonify }},
+      "categories": ["Reading"],
+      "date": {{ item.date | date: "%B %e, %Y" | jsonify }},
+      "date_iso": {{ item.date | date_to_xmlschema | jsonify }},
+      "excerpt": {{ item.excerpt | default: item.content | strip_html | strip_newlines | normalize_whitespace | truncatewords: 30 | jsonify }},
+      "content": {{ item.content | strip_html | strip_newlines | normalize_whitespace | truncatewords: 80 | jsonify }},
+      "type": {{ "reading" | jsonify }}
+    }{% unless forloop.last %},{% endunless %}{% endfor %}{% endif %}
 ]
