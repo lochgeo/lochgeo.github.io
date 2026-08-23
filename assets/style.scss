@@ -52,13 +52,14 @@ $font-display: "Space Grotesk", ui-sans-serif, system-ui, -apple-system, "Segoe 
 .site-brand {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   font-family: $font-display;
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 1.2rem;
 
   img {
-    width: 34px;
-    height: 34px;
+    width: 42px;
+    height: 42px;
     border-radius: 8px;
     margin: 0;
   }
@@ -102,7 +103,7 @@ $font-display: "Space Grotesk", ui-sans-serif, system-ui, -apple-system, "Segoe 
 
 .home-sidebar {
   position: sticky;
-  top: 4.5rem;
+  top: 5rem;
 
   .sidebar-title {
     margin: 0 0 10px;
@@ -134,6 +135,7 @@ $font-display: "Space Grotesk", ui-sans-serif, system-ui, -apple-system, "Segoe 
   }
 
   a {
+    font-size: 0.875rem;
     text-decoration: none;
 
     &:hover {
@@ -145,7 +147,7 @@ $font-display: "Space Grotesk", ui-sans-serif, system-ui, -apple-system, "Segoe 
   .cat-count {
     flex: 0 0 auto;
     font-family: $font-mono;
-    font-size: 12px;
+    font-size: 11px;
     color: var(--pico-muted-color);
   }
 }
@@ -216,7 +218,7 @@ a.read-more::after {
 
 .archive-year {
   position: sticky;
-  top: 55px;
+  top: 64px;
   z-index: 10;
   display: flex;
   align-items: baseline;
