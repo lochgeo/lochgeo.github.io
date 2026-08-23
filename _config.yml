@@ -50,6 +50,19 @@ enforce_ssl: https://lochgeo.github.io
 
 permalink: /:title/
 
+# Reading list collection (separate from blog posts)
+collections:
+  reading:
+    output: true
+    permalink: /reading/:path/
+
+# Defaults for the reading list so agent-generated posts only need title + date
+defaults:
+  - scope:
+      path: "_reading"
+    values:
+      layout: reading
+
 # The release of Jekyll Now that you're using
 version: v1.2.0
 
