@@ -72,7 +72,7 @@ $font-cursive: "Great Vibes", "Dancing Script", cursive;
   .brand-name {
     font-family: $font-cursive;
     font-weight: 400;
-    font-size: clamp(1.65rem, 4vw, 2.15rem);
+    font-size: clamp(2.47rem, 5vw, 3.22rem);
     line-height: 1;
     letter-spacing: 0.015em;
     white-space: nowrap;
@@ -95,21 +95,22 @@ $font-cursive: "Great Vibes", "Dancing Script", cursive;
 }
 
 .nav-toggle-label {
-  display: none;
+  display: none !important;
   align-items: center;
   justify-content: center;
-  width: 42px;
-  height: 42px;
+  width: 32px;
+  height: 32px;
+  padding: 4px;
   cursor: pointer;
-  border: 1px solid var(--pico-muted-border-color);
-  border-radius: 8px;
+  border: none;
+  background: transparent;
   color: var(--pico-color);
   -webkit-tap-highlight-color: transparent;
 
   span {
     display: block;
     position: relative;
-    width: 18px;
+    width: 22px;
     height: 2px;
     background: currentColor;
     border-radius: 2px;
@@ -128,11 +129,11 @@ $font-cursive: "Great Vibes", "Dancing Script", cursive;
     }
 
     &::before {
-      top: -6px;
+      top: -7px;
     }
 
     &::after {
-      top: 6px;
+      top: 7px;
     }
   }
 }
@@ -144,7 +145,7 @@ $font-cursive: "Great Vibes", "Dancing Script", cursive;
 
 @media (max-width: 768px) {
   .site-brand .brand-name {
-    font-size: clamp(1.5rem, 6vw, 1.85rem);
+    font-size: clamp(2.25rem, 7vw, 2.77rem);
   }
 
   .site-brand img {
@@ -153,7 +154,7 @@ $font-cursive: "Great Vibes", "Dancing Script", cursive;
   }
 
   .nav-toggle-label {
-    display: inline-flex;
+    display: inline-flex !important;
   }
 
   .site-header nav {
@@ -195,7 +196,6 @@ $font-cursive: "Great Vibes", "Dancing Script", cursive;
   }
 
   .nav-toggle:checked + .nav-toggle-label {
-    border-color: var(--pico-primary);
     color: var(--pico-primary);
   }
 
