@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400..700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Dancing+Script:wght@600;700&display=swap" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
@@ -30,7 +31,11 @@
             </a>
           </li>
         </ul>
-        <ul>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true" />
+        <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
+          <span></span>
+        </label>
+        <ul class="nav-links">
           <li><a href="{{ site.baseurl }}/">Home</a></li>
           <li><a href="{{ site.baseurl }}/search">Search</a></li>
           <li><a href="{{ site.baseurl }}/reading">Reading</a></li>
@@ -48,5 +53,23 @@
       {% include svg-icons.html %}
       <p class="footer-copy">&copy; {{ site.author }} {{ "now" | date: "%Y" }}</p>
     </footer>
+    <script>
+      // Close hamburger menu on link click / outside click / Escape
+      (function () {
+        var toggle = document.getElementById('nav-toggle');
+        if (!toggle) return;
+        document.querySelectorAll('.nav-links a').forEach(function (a) {
+          a.addEventListener('click', function () { toggle.checked = false; });
+        });
+        document.addEventListener('click', function (e) {
+          if (!toggle.checked) return;
+          var nav = document.querySelector('.site-header nav');
+          if (nav && !nav.contains(e.target)) toggle.checked = false;
+        });
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape') toggle.checked = false;
+        });
+      })();
+    </script>
   </body>
 </html>
