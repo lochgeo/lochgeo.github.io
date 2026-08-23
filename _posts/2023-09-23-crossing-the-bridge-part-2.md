@@ -3,7 +3,7 @@ layout: post
 title:  "Crossing the Bridge Part 2 - Tips That Actually Helped"
 date:   2023-09-23 11:18:00
 comments: True
-categories: [Experiences, Thoughts]
+categories: [Experiences]
 excerpt_separator: "<!--more-->"
 ---
 

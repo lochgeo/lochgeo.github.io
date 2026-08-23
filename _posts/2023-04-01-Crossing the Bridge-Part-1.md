@@ -2,7 +2,7 @@
 layout: post
 title:  "Crossing the Bridge - Challenges of transitioning from an Individual Contributor to Management Role"
 date:   2023-04-19 14:43:00
-categories: [Experiences, Thoughts]
+categories: [Experiences]
 ---
 
 Many IT professionals dream of one day becoming a manager. After all, managers have more responsibility, more opportunities for growth and often earn more money. But not everyone is prepared for the challenges and trade-offs that come with this career move. The reality is that moving from an individual contributor (IC) role to a management one is hard and it requires you to make sacrifices and step outside your comfort zone. There’s a reason that some engineers hesitate to accept or pursue management roles, even when part of them wants that role. As somebody who has made that transition, here are some of the challenges that I faced.

@@ -3,7 +3,7 @@ layout: post
 title:  "ChatGPT API - Yesterday the Floodgates Opened"
 date:   2023-03-02 19:22:00
 comments: True
-categories: [Software, AI]
+categories: [Software, Generative AI]
 excerpt_separator: "<!--more-->"
 ---
 

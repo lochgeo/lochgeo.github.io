@@ -3,7 +3,7 @@ layout: post
 title:  "ChatGPT - Three Weeks In and I'm Still Checking Everything"
 date:   2022-12-23 10:34:00
 comments: True
-categories: [Software, AI]
+categories: [Software, Generative AI]
 excerpt_separator: "<!--more-->"
 ---
 

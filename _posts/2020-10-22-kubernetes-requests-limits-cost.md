@@ -2,7 +2,7 @@
 layout: post
 title:  "Kubernetes Requests and Limits - Paying for Air"
 date:   2020-10-22 19:32:00
-categories: [Software, Kubernetes]
+categories: [Software, Containers & Kubernetes]
 excerpt_separator: "<!--more-->"
 ---
 
