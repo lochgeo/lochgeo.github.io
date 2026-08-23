@@ -4,7 +4,7 @@ title:  "DeepSeek-R1 on a Budget Laptop - When Reasoning Models Come Home"
 date:   2025-03-23 10:14:00
 comments: True
 categories: [Software, Generative AI]
-excerpt_separator: "<!--more-->
+excerpt_separator: "<!--more-->"
 ---
 
 The DeepSeek-R1 release in January felt like a moment. Not just because a Chinese lab dropped an open-weight reasoning model that matches o1 on benchmarks — but because they released the whole family. Six distilled models, from 1.5B to 70B parameters. MIT license. API pricing that makes o1 look expensive. And critically, the community had GGUF quantizations ready within days.

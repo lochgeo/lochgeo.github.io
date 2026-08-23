@@ -4,7 +4,7 @@ title:  "MCP - The Protocol That Might Finally Make Agents Useful"
 date:   2025-01-13 09:30:00
 comments: True
 categories: [Software, Generative AI]
-excerpt_separator: "<!--more-->
+excerpt_separator: "<!--more-->"
 ---
 
 It is the second week of January 2025. The holiday dust has settled, the first sprint planning of the year is done, and I am staring at a familiar problem: how do I actually get an LLM to *do* something useful with our internal systems without writing a bespoke integration for every single data source?
