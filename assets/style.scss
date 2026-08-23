@@ -79,9 +79,19 @@ $font-cursive: "Great Vibes", "Dancing Script", cursive;
   }
 }
 
-// Hamburger — hidden on desktop
+// Hamburger — hidden on desktop (visually hidden but still toggleable via label)
 .nav-toggle {
-  display: none;
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  // fallback for any Pico checkbox styles
+  display: none !important;
+}
+
+.nav-toggle[hidden] {
+  display: none !important;
 }
 
 .nav-toggle-label {
