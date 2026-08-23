@@ -3,7 +3,7 @@ layout: post
 title:  "MCP - The Protocol That Might Finally Make Agents Useful"
 date:   2025-01-13 09:30:00
 comments: True
-categories: [Software, Generative AI]
+categories: [Generative AI]
 excerpt_separator: "<!--more-->"
 ---
 

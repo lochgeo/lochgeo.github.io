@@ -2,7 +2,7 @@
 layout: post
 title:  "Software Architectures"
 date:   2023-01-10 10:22:00
-categories: [Software, Architecture]
+categories: [Architecture]
 ---
 
 Software architecture is the high-level design of a software system that defines its components, interactions, and properties. Software architecture evolves over time to cope with changing requirements, technologies, and challenges. In this essay, I will briefly describe some of the main phases of software architecture evolution.

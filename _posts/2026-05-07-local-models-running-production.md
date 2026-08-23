@@ -3,7 +3,7 @@ layout: post
 title:  "Local Models - My Laptop Is Running Production Now"
 date:   2026-05-07 08:12:00
 comments: True
-categories: [Software, Generative AI]
+categories: [Generative AI]
 excerpt_separator: "<!--more-->"
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title:  "Correlation IDs - Following One Request Through the Noise"
 date:   2020-12-01 18:41:00
 comments: True
-categories: [Software, Observability]
+categories: [Observability]
 excerpt_separator: "<!--more-->"
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title:  "Context Engineering - Prompts Got a Promotion"
 date:   2025-10-14 09:41:00
 comments: True
-categories: [Software, Generative AI]
+categories: [Generative AI]
 excerpt_separator: "<!--more-->"
 ---
 

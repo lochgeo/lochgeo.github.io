@@ -3,7 +3,7 @@ layout: post
 title:  "Prompt Injection - The Longer the Context, the Bigger the Attack Surface"
 date:   2024-04-15 10:34:00
 comments: True
-categories: [Software, Security]
+categories: [Security]
 excerpt_separator: "<!--more-->"
 ---
 

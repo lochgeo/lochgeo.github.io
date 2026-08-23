@@ -3,7 +3,7 @@ layout: post
 title:  "Model Routing - Stop Sending Everything to the Expensive Model"
 date:   2025-12-21 09:47:00
 comments: True
-categories: [Software, Generative AI]
+categories: [Generative AI]
 excerpt_separator: "<!--more-->"
 ---
 

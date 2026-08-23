@@ -2,7 +2,7 @@
 layout: post
 title:  "Impostor Syndrome : Am I good enough?"
 date:   2024-05-05 11:22:00
-categories: [Software, Personal Development]
+categories: [Personal Development]
 excerpt_separator: "<!--more-->"
 ---
 

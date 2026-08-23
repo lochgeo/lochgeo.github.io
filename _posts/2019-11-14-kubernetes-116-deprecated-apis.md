@@ -2,7 +2,7 @@
 layout: post
 title:  "Kubernetes 1.16 - When the Old APIs Stop Answering"
 date:   2019-11-14 20:18:00
-categories: [Software, Containers & Kubernetes]
+categories: [Containers & Kubernetes]
 excerpt_separator: "<!--more-->"
 ---
 

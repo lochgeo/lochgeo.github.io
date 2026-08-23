@@ -3,7 +3,7 @@ layout: post
 title:  "DeepSeek-R1 on a Budget Laptop - When Reasoning Models Come Home"
 date:   2025-03-23 10:14:00
 comments: True
-categories: [Software, Generative AI]
+categories: [Generative AI]
 excerpt_separator: "<!--more-->"
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "Web & AI: Lessons from Web Apps for the coming AI Era"
 date:   2024-05-17 06:22:00
-categories: [Software, Generative AI]
+categories: [Generative AI]
 excerpt_separator: "<!--more-->"
 ---
 In the rapidly evolving world of technology, few innovations have been as transformative as the internet and generative AI. From the early days of the web, when accessing information meant waiting for static pages to load, to the present era of conversational AI, the journey has been marked by groundbreaking developments. 

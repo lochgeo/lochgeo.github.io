@@ -3,7 +3,7 @@ layout: post
 title:  "GitOps - Stop kubectl-apply-ing Your Way to Prod"
 date:   2021-04-16 19:23:00
 comments: True
-categories: [Software, Containers & Kubernetes]
+categories: [Containers & Kubernetes]
 excerpt_separator: "<!--more-->"
 ---
 

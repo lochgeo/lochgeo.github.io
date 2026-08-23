@@ -3,7 +3,7 @@ layout: post
 title:  "Multi-Cloud - The Slide Deck Promise and the Terraform Hangover"
 date:   2022-03-24 10:37:00
 comments: True
-categories: [Software, Cloud]
+categories: [Cloud]
 excerpt_separator: "<!--more-->"
 ---
 

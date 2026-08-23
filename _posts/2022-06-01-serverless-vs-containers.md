@@ -3,7 +3,7 @@ layout: post
 title:  "Serverless vs Containers - Stop Picking Sides"
 date:   2022-06-01 11:14:00
 comments: True
-categories: [Software, Cloud]
+categories: [Cloud]
 excerpt_separator: "<!--more-->"
 ---
 

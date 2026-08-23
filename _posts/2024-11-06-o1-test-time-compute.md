@@ -3,7 +3,7 @@ layout: post
 title:  "o1 - When the Model Starts Thinking Before Answering"
 date:   2024-11-06 09:47:00
 comments: True
-categories: [Software, Generative AI]
+categories: [Generative AI]
 excerpt_separator: "<!--more-->"
 ---
 

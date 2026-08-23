@@ -2,7 +2,7 @@
 layout: post
 title:  "Bearer, pop the tokens"
 date:   2023-06-20 01:22:00
-categories: [Software, Security]
+categories: [Security]
 excerpt_separator: "<!--more-->"
 ---
 

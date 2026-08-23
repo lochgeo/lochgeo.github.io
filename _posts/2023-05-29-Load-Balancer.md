@@ -2,7 +2,7 @@
 layout: post
 title:  "Load Balancing - A Balancing Act"
 date:   2023-05-29 12:22:00
-categories: [Software, Cloud]
+categories: [Cloud]
 ---
 
 Load balancing is a technique used to distribute network or application traffic across a number of servers. Load balancers can be used to distribute traffic for a variety of applications, including web servers, databases, and file servers. They can also be used to distribute traffic for different types of traffic, such as HTTP, HTTPS, and DNS. Load balancing is important because it helps to improve the performance, reliability and security of applications. By distributing traffic across multiple servers, load balancing can help to prevent any single server from becoming overloaded. This can improve performance by ensuring that requests are processed quickly and efficiently. Load balancing can also help to improve reliability by preventing a single server failure from taking down an entire application or website. Finally, load balancing can help to improve security by making it more difficult for attackers to exploit a single server.

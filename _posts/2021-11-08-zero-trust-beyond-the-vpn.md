@@ -3,7 +3,7 @@ layout: post
 title:  "Zero Trust - The VPN Is Not the Castle Wall"
 date:   2021-11-08 18:42:00
 comments: True
-categories: [Software, Security]
+categories: [Security]
 excerpt_separator: "<!--more-->"
 ---
 

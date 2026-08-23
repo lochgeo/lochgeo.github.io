@@ -3,7 +3,7 @@ layout: post
 title:  "Tool Use - The Agent Is Just a Loop With Better Manners"
 date:   2024-06-22 11:42:00
 comments: True
-categories: [Software, Generative AI]
+categories: [Generative AI]
 excerpt_separator: "<!--more-->"
 ---
 

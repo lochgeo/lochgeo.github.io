@@ -3,7 +3,7 @@ layout: post
 title:  "After SolarWinds - Who Builds Your Binaries?"
 date:   2021-02-07 11:23:00
 comments: True
-categories: [Software, Security]
+categories: [Security]
 excerpt_separator: "<!--more-->"
 ---
 

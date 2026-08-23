@@ -2,7 +2,7 @@
 layout: post
 title:  "Remote Pairing - When the Desk Next Door Becomes a Link"
 date:   2020-04-16 11:18:00
-categories: [Software, Personal Development]
+categories: [Personal Development]
 excerpt_separator: "<!--more-->"
 ---
 

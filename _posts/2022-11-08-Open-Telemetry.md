@@ -2,7 +2,7 @@
 layout: post
 title:  "Open Telemetry - The Future of Observability?"
 date:   2022-11-08 12:22:00
-categories: [Software, Observability]
+categories: [Observability]
 ---
 
 In today's world, businesses are increasingly reliant on software to deliver their products and services. As software becomes more complex, it becomes more difficult to keep track of its performance and behavior. his can lead to problems such as outages, performance degradation, and security vulnerabilities. This is where observability comes in. Observability is the ability to understand what is happening inside a system from the knowledge of the external data it produces.

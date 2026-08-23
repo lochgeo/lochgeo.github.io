@@ -3,7 +3,7 @@ layout: post
 title:  "Background Agents - When the Backlog Opens Its Own Pull Requests"
 date:   2026-02-28 09:12:00
 comments: True
-categories: [Software, Generative AI]
+categories: [Generative AI]
 excerpt_separator: "<!--more-->"
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title:  "Internal Developer Portals - Stop Asking Slack Who Owns That Service"
 date:   2022-08-08 10:37:00
 comments: True
-categories: [Software, Architecture]
+categories: [Architecture]
 excerpt_separator: "<!--more-->"
 ---
 

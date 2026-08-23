@@ -3,7 +3,7 @@ layout: post
 title:  "AGENTS.md - Every Repo Now Needs Two READMEs"
 date:   2025-08-07 21:12:00
 comments: True
-categories: [Software, Generative AI]
+categories: [Generative AI]
 excerpt_separator: "<!--more-->"
 ---
 
