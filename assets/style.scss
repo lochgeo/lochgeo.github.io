@@ -224,6 +224,55 @@ a.read-more::after {
   }
 }
 
+// ---- Categories ----
+.category-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 3rem;
+}
+
+.category-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 4px 12px;
+  border: 1px solid var(--pico-muted-border-color);
+  border-radius: 999px;
+  font-family: $font-mono;
+  font-size: 13px;
+  color: var(--pico-color);
+  text-decoration: none;
+  transition: border-color 0.15s ease, color 0.15s ease;
+
+  .category-pill-count {
+    font-size: 11px;
+    color: var(--pico-muted-color);
+  }
+
+  &:hover {
+    border-color: var(--pico-primary);
+    color: var(--pico-primary);
+    text-decoration: none;
+
+    .category-pill-count {
+      color: inherit;
+    }
+  }
+}
+
+.category-group {
+  margin-bottom: 34px;
+
+  .category-head {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    margin: 0;
+    padding: 14px 0 10px;
+  }
+}
+
 // ---- Footer ----
 footer {
   text-align: center;
