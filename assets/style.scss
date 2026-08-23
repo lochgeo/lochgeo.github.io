@@ -90,6 +90,75 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.05em;
 }
 
+// ---- Home layout ----
+.home-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 42rem) minmax(150px, 1fr);
+  gap: clamp(2rem, 6vw, 4rem);
+  align-items: start;
+}
+
+.home-sidebar {
+  position: sticky;
+  top: 4.5rem;
+
+  .sidebar-title {
+    margin: 0 0 10px;
+    font-family: $font-mono;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--pico-muted-color);
+  }
+}
+
+.sidebar-cats {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 10px;
+    padding: 7px 0;
+
+    & + li {
+      border-top: 1px solid color-mix(in srgb, var(--pico-muted-border-color) 55%, transparent);
+    }
+  }
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      color: var(--pico-primary);
+      text-decoration: none;
+    }
+  }
+
+  .cat-count {
+    flex: 0 0 auto;
+    font-family: $font-mono;
+    font-size: 12px;
+    color: var(--pico-muted-color);
+  }
+}
+
+@media (max-width: 900px) {
+  .home-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .home-sidebar {
+    position: static;
+    margin-top: 1rem;
+  }
+}
+
 // ---- Home page cards ----
 .posts > article {
   border-radius: 12px;
