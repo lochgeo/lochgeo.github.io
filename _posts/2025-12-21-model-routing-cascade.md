@@ -7,7 +7,7 @@ categories: [Generative AI]
 excerpt_separator: "<!--more-->"
 ---
 
-Last month I watched a teammate's agent loop burn through $2,300 in API calls overnight. The task? Classifying support tickets into three buckets. The model? GPT-4o. Every single ticket — even the "reset my password" ones — got the full frontier treatment.
+Not long ago, I watched a teammate's agent loop burn through $2,300 in API calls overnight. The task? Classifying support tickets into three buckets. The model? GPT-4o. Every single ticket — even the "reset my password" ones — got the full frontier treatment.
 
 That's the trap. When you first get API access to a reasoning model, it feels like a superpower. You start reaching for it everywhere. Why wouldn't you? It's smarter, it reasons, it gets the hard stuff right. But somewhere between the demo and the production bill, the economics invert. You're paying premium prices for commodity work.
 

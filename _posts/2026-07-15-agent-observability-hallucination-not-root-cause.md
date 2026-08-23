@@ -7,7 +7,7 @@ categories: [Software, Observability]
 excerpt_separator: "<!--more-->"
 ---
 
-Last month one of our internal chatbots gave a confidently wrong answer about a collateral margin rule, and the incident thread quietly died with the words "looks like a hallucination, closing as won't fix". I have started hearing that phrase the way I used to hear "it's flaky". Technically true, completely useless, and usually a polite way of saying nobody looked.
+Recently, one of our internal chatbots gave a confidently wrong answer about a collateral margin rule, and the incident thread quietly died with the words "looks like a hallucination, closing as won't fix". I have started hearing that phrase the way I used to hear "it's flaky". Technically true, completely useless, and usually a polite way of saying nobody looked.
 
 Six years ago I wrote about correlation IDs because we refused to accept "it's flaky" as a root cause for a request crossing five .NET services. We widened log windows, followed IDs, found the rolled-back transaction hiding in the noise. The same fight has come back, except this time the misbehaving component bills by the token and improvises its own control flow. The old excuse was that you simply could not see inside these systems. That excuse is expiring, and this post is about what replaced it.
 

@@ -9,7 +9,7 @@ excerpt_separator: "<!--more-->"
 
 Every coding agent I have picked up this summer has asked me the same question in a different accent. Codex CLI goes looking for an `AGENTS.md`. Gemini CLI wants a `GEMINI.md`. Claude Code reads `CLAUDE.md`. Cursor keeps its own rules folder. Four tools, four filenames, one identical need: *tell me how this repo works before you let me loose in it.*
 
-Last weekend I opened one of my side projects and counted the instruction files piled up in the root. Three of them. All saying roughly the same thing in three dialects. That is when it clicked: my repos need onboarding documents for robots now, the same way they have always needed a README for humans.
+A few weekends ago I opened one of my side projects and counted the instruction files piled up in the root. Three of them. All saying roughly the same thing in three dialects. That is when it clicked: my repos need onboarding documents for robots now, the same way they have always needed a README for humans.
 
 <!--more-->
 

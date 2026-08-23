@@ -7,7 +7,7 @@ categories: [Generative AI]
 excerpt_separator: "<!--more-->"
 ---
 
-Last sprint I ran a small experiment. Instead of assigning a routine bug ticket to a teammate, I assigned it to our coding agent. Twenty minutes later, while I was still in standup, a draft pull request opened itself: commits pushed, checks running, a tidy checklist of what it intended to do. Nobody typed anything. The backlog had effectively started opening its own pull requests.
+During one recent sprint I ran a small experiment. Instead of assigning a routine bug ticket to a teammate, I assigned it to our coding agent. Twenty minutes later, while I was still in standup, a draft pull request opened itself: commits pushed, checks running, a tidy checklist of what it intended to do. Nobody typed anything. The backlog had effectively started opening its own pull requests.
 
 I have written before about reading AI-generated diffs and about repo instructions for coding agents, but those were about the inner loop, me at the keyboard with an agent beside me. Background agents are a different animal. They change not how I code, but how work flows through the whole team. Somewhere along the way my issue tracker quietly turned into a job queue.
 

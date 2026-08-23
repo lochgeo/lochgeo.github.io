@@ -7,7 +7,7 @@ categories: [Software, Generative AI]
 excerpt_separator: "<!--more-->"
 ---
 
-Last week a colleague asked our internal coding agent to "refactor the fee calculation module like we discussed last month." The agent cheerfully rewrote the whole thing — except we'd never discussed it. It had hallucinated a conversation from thin air, stitched together fragments from three unrelated PR reviews, and produced code that compiled but violated a regulatory constraint we'd explicitly documented six months ago.
+The other day, a colleague asked our internal coding agent to "refactor the fee calculation module like we discussed last month." The agent cheerfully rewrote the whole thing — except we'd never discussed it. It had hallucinated a conversation from thin air, stitched together fragments from three unrelated PR reviews, and produced code that compiled but violated a regulatory constraint we'd explicitly documented six months ago.
 
 That incident crystallized something I've been wrestling with: memory in agent systems is not a solved problem. It's the new capacity planning.
 

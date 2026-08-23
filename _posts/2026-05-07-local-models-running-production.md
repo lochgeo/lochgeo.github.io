@@ -7,7 +7,7 @@ categories: [Generative AI]
 excerpt_separator: "<!--more-->"
 ---
 
-Last Saturday morning I opened Task Manager before I opened my mail. There it was: a model server holding nine-odd gigabytes of RAM, alive since Friday night, with a couple of things on the machine quietly pointing HTTP requests at it. A summarisation job had run overnight against my local model, on schedule, nobody watching. Somewhere in the past year or so, without any ceremony, my laptop stopped being a machine that occasionally plays with AI and became a small server that other software depends on.
+One Saturday morning I opened Task Manager before I opened my mail. There it was: a model server holding nine-odd gigabytes of RAM, alive since Friday night, with a couple of things on the machine quietly pointing HTTP requests at it. A summarisation job had run overnight against my local model, on schedule, nobody watching. Somewhere in the past year or so, without any ceremony, my laptop stopped being a machine that occasionally plays with AI and became a small server that other software depends on.
 
 I did not plan this. When I first ran models locally back in late 2023, it was a toy: Mistral 7B in a terminal, mostly to see whether it could hold a conversation at all. Fun toy. But a toy.
 
