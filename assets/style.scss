@@ -46,6 +46,10 @@ $font-display: "Space Grotesk", ui-sans-serif, system-ui, -apple-system, "Segoe 
 
   nav {
     padding-block: 0.6rem;
+
+    a:not(.site-brand) {
+      font-size: 0.875rem;
+    }
   }
 }
 
