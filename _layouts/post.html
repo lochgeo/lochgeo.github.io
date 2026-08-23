@@ -2,36 +2,41 @@
 layout: default
 ---
 
-<article class="post detailed">
-  <h1>{{ page.title }}</h1>
+<div class="home-layout">
+  <div class="post-main">
+    <article class="post detailed">
+      <h1>{{ page.title }}</h1>
 
-  <div>
-    <p class="author_title">{{site.author}}  ·  {{ page.date | date: "%B %e, %Y" }}</p>
-    {% if page.last_modified_at %}
-    <p class="author_title" datetime="{{ page.last_modified_at | date_to_xmlschema }}">(Updated: {{ page.last_modified_at | date: "%b %-d, %Y" }})</p>
-    {% endif %}
-    <div class="post-tags">
-      {% if post %}
-        {% assign categories = post.categories %}
-      {% else %}
-        {% assign categories = page.categories %}
-      {% endif %}
-      {% for category in categories %}
-        <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
-        {% unless forloop.last %}&nbsp;{% endunless %}
-      {% endfor %}
-    </div>
-  </div>
-    
-  <div class="entry">
-    {{ content }}
-  </div>
+      <div>
+        <p class="author_title">{{site.author}}  ·  {{ page.date | date: "%B %e, %Y" }}</p>
+        {% if page.last_modified_at %}
+        <p class="author_title" datetime="{{ page.last_modified_at | date_to_xmlschema }}">(Updated: {{ page.last_modified_at | date: "%b %-d, %Y" }})</p>
+        {% endif %}
+        <div class="post-tags">
+          {% if post %}
+            {% assign categories = post.categories %}
+          {% else %}
+            {% assign categories = page.categories %}
+          {% endif %}
+          {% for category in categories %}
+            <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
+            {% unless forloop.last %}&nbsp;{% endunless %}
+          {% endfor %}
+        </div>
+      </div>
+        
+      <div class="entry">
+        {{ content }}
+      </div>
 
-  <div>
-    <p><span class="share-box">Share:</span> <a href="https://x.com/intent/post?text={{ page.title | uri_escape }}&amp;url={{ site.url }}{{ page.url | uri_escape }}" target="_blank" rel="noopener">X</a>, <a href="https://www.facebook.com/sharer.php?u={{ site.url }}{{ page.url | uri_escape }}" target="_blank" rel="noopener">Facebook</a></p>
-  </div>
+      <div>
+        <p><span class="share-box">Share:</span> <a href="https://x.com/intent/post?text={{ page.title | uri_escape }}&amp;url={{ site.url }}{{ page.url | uri_escape }}" target="_blank" rel="noopener">X</a>, <a href="https://www.facebook.com/sharer.php?u={{ site.url }}{{ page.url | uri_escape }}" target="_blank" rel="noopener">Facebook</a></p>
+      </div>
 
-  <!--<div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
-  </div>-->
-</article>
+      <!--<div class="date">
+        Written on {{ page.date | date: "%B %e, %Y" }}
+      </div>-->
+    </article>
+  </div>
+  {% include sidebar.html %}
+</div>

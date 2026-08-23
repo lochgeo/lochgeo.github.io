@@ -40,16 +40,5 @@ layout: default
     {% endif %}
   </div>
 
-  <aside class="home-sidebar">
-    <h2 class="sidebar-title">Categories</h2>
-    <ul class="sidebar-cats">
-      {% assign sorted_cats = site.categories | sort %}
-      {% for category in sorted_cats %}
-      <li>
-        <a href="{{ site.baseurl }}/categories/#{{ category[0] | slugize }}">{{ category[0] }}</a>
-        <span class="cat-count">({{ category[1].size }})</span>
-      </li>
-      {% endfor %}
-    </ul>
-  </aside>
+  {% include sidebar.html %}
 </div>

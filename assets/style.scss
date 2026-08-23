@@ -239,6 +239,12 @@ $font-cursive: "Great Vibes", "Dancing Script", cursive;
   align-items: start;
 }
 
+.page-main,
+.post-main,
+.posts {
+  min-width: 0;
+}
+
 .home-sidebar {
   position: sticky;
   top: 5rem;
