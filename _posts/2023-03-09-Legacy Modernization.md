@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Modernizing the Beast"
-date:   2023-03-06 12:14:00
+date:   2023-03-09 12:14:00
 categories: [Architecture]
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Mixture of Experts - My Old Laptop Runs Bigger Models Than It Should"
-date:   2026-05-07 21:12:00
+date:   2026-05-14 21:12:00
 comments: True
 categories: [Generative AI]
 excerpt_separator: "<!--more-->"

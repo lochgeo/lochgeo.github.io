@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Spring Boot for a .NET Brain - Same Job, Different Dialect"
-date:   2023-05-09 10:18:00
+date:   2023-05-14 10:18:00
 comments: True
 categories: [Architecture]
 excerpt_separator: "<!--more-->"
