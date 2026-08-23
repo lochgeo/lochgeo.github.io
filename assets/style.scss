@@ -62,6 +62,17 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+@media (max-width: 640px) {
+  .site-brand .brand-name {
+    display: none;
+  }
+
+  .site-header nav {
+    --pico-nav-element-spacing-horizontal: 0.25rem;
+    --pico-nav-link-spacing-horizontal: 0.4rem;
+  }
+}
+
 // ---- Post meta ----
 .post_date,
 .author_title {
