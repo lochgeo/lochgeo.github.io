@@ -402,7 +402,7 @@ a.read-more::after {
   }
 }
 
-// When pullquote is nested inside a markdown blockquote (e.g. `> {% include pullquote %}`), strip outer chrome
+// When pullquote is nested inside a markdown blockquote, strip outer chrome
 .entry blockquote:has(> .pullquote),
 .entry blockquote:has(> blockquote.pullquote) {
   margin: 2rem 0;
