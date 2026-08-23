@@ -326,16 +326,84 @@ a.read-more::after {
 .post.detailed {
   max-width: 42rem;
 
-  .entry blockquote {
-    border-left: 3px solid var(--pico-primary);
-  }
-
   .entry hr {
     border: none;
     height: 1px;
     width: 6rem;
     margin: 3rem auto;
     background-image: linear-gradient(to right, transparent, var(--pico-muted-border-color), transparent);
+  }
+}
+
+// ---- Blockquotes & Pull quotes ----
+.entry blockquote:not(.pullquote) {
+  margin: 1.8rem 0;
+  padding: 1rem 1.25rem 1rem 1.5rem;
+  font-style: italic;
+  font-size: clamp(1.02rem, 2.6vw, 1.14rem);
+  line-height: 1.65;
+  color: var(--pico-color);
+  background: color-mix(in srgb, var(--pico-primary) 7%, var(--pico-card-background-color));
+  border-left: 4px solid var(--pico-primary);
+  border-radius: 0 10px 10px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+
+  p {
+    margin-bottom: 0.6em;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  cite,
+  footer {
+    display: block;
+    margin-top: 0.6rem;
+    font-style: normal;
+    font-size: 0.85em;
+    color: var(--pico-muted-color);
+  }
+}
+
+.pullquote {
+  margin: 2rem 0;
+  padding: 1.1rem 1.4rem 1.1rem 1.6rem;
+  font-style: italic;
+  font-size: clamp(1.12rem, 3vw, 1.32rem);
+  font-weight: 500;
+  line-height: 1.55;
+  color: var(--pico-color);
+  background: color-mix(in srgb, var(--pico-primary) 9%, var(--pico-background-color));
+  border-left: 4px solid var(--pico-primary);
+  border-radius: 0 12px 12px 0;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  position: relative;
+
+  &::before {
+    content: "“";
+    position: absolute;
+    top: -0.15rem;
+    left: 0.5rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 3rem;
+    line-height: 1;
+    color: color-mix(in srgb, var(--pico-primary) 28%, transparent);
+    pointer-events: none;
+  }
+}
+
+// When pullquote is nested inside a markdown blockquote (e.g. `> {% include pullquote %}`), strip outer chrome
+.entry blockquote:has(> .pullquote),
+.entry blockquote:has(> blockquote.pullquote) {
+  margin: 2rem 0;
+  padding: 0;
+  background: none;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+
+  > .pullquote {
+    margin: 0;
   }
 }
 
