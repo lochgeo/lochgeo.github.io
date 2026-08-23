@@ -15,7 +15,9 @@ There are many different algorithms for load balancing because there are so many
 - The type of traffic being generated
 - The performance requirements of the application
 
-Different load balancing algorithms are better suited for different situations. For example, round robin is a simple and efficient algorithm that is good for distributing traffic evenly between a large number of servers. However, it does not take into account the capacity of each server, so it can lead to some servers becoming overloaded. Least connections is a more sophisticated algorithm that takes into account the current load on each server. This can help to ensure that no one server becomes overloaded, but it can also lead to some servers being underutilized. {% include pullquote.html quote="The best algorithm for a particular situation will depend on the specific factors that need to be considered. There is no one-size-fits-all solution." %} 
+Different load balancing algorithms are better suited for different situations. For example, round robin is a simple and efficient algorithm that is good for distributing traffic evenly between a large number of servers. However, it does not take into account the capacity of each server, so it can lead to some servers becoming overloaded. Least connections is a more sophisticated algorithm that takes into account the current load on each server. This can help to ensure that no one server becomes overloaded, but it can also lead to some servers being underutilized.
+
+{% include pullquote.html quote="The best algorithm for a particular situation will depend on the specific factors that need to be considered. There is no one-size-fits-all solution." %} 
 
 Now lets take a look at some of the more popular load balancing algorithms
 
