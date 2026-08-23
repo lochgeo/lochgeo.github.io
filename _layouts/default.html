@@ -5,6 +5,9 @@
     {% seo title=false %}
     {% include meta.html %}
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400..700&display=swap" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
@@ -18,8 +21,8 @@
   </head>
 
   <body>
-    <header class="container">
-      <nav>
+    <header class="site-header">
+      <nav class="container">
         <ul>
           <li>
             <a href="{{ site.baseurl }}/" class="site-brand">
@@ -42,6 +45,7 @@
 
     <footer class="container">
       {% include svg-icons.html %}
+      <p class="footer-copy">&copy; {{ site.author }} {{ "now" | date: "%Y" }}</p>
     </footer>
   </body>
 </html>

@@ -7,15 +7,52 @@
 //
 
 $font-mono: ui-monospace, "Cascadia Mono", "JetBrains Mono", "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+$font-display: "Space Grotesk", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
 
 @import "darcula";
 @import "svg-icons";
 
-// ---- Header brand ----
+// ---- Global niceties ----
+::selection {
+  background: color-mix(in srgb, var(--pico-primary) 22%, transparent);
+}
+
+[id] {
+  scroll-margin-top: 5rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+// ---- Headings ----
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-display;
+}
+
+// ---- Header ----
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: color-mix(in srgb, var(--pico-background-color) 82%, transparent);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--pico-muted-border-color);
+
+  nav {
+    padding-block: 0.6rem;
+  }
+}
+
 .site-brand {
   display: inline-flex;
   align-items: center;
   gap: 10px;
+  font-family: $font-display;
+  font-weight: 600;
 
   img {
     width: 34px;
@@ -25,17 +62,32 @@ $font-mono: ui-monospace, "Cascadia Mono", "JetBrains Mono", "SF Mono", Menlo, C
   }
 }
 
-// ---- Footer icons ----
-footer {
-  text-align: center;
+// ---- Post meta ----
+.post_date,
+.author_title {
+  font-family: $font-mono;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--pico-muted-color);
+}
+
+.post-tags a {
+  font-family: $font-mono;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 // ---- Home page cards ----
 .posts > article {
-  transition: transform 0.15s ease;
+  border-radius: 12px;
+  box-shadow: none;
+  padding: clamp(1.25rem, 4vw, 1.75rem);
+  transition: border-color 0.15s ease, transform 0.15s ease;
 
   &:hover {
-    transform: translateY(-2px);
+    border-color: color-mix(in srgb, var(--pico-primary) 32%, var(--pico-muted-border-color));
   }
 
   h2 a {
@@ -48,13 +100,31 @@ footer {
   }
 }
 
-.post_date,
-.author_title {
-  color: var(--pico-muted-color);
+@media (prefers-reduced-motion: no-preference) {
+  .posts > article:hover {
+    transform: translateY(-2px);
+  }
 }
 
 a.read-more::after {
   content: " \2192";
+}
+
+// ---- Post page ----
+.post.detailed {
+  max-width: 42rem;
+
+  .entry blockquote {
+    border-left: 3px solid var(--pico-primary);
+  }
+
+  .entry hr {
+    border: none;
+    height: 1px;
+    width: 6rem;
+    margin: 3rem auto;
+    background-image: linear-gradient(to right, transparent, var(--pico-muted-border-color), transparent);
+  }
 }
 
 // ---- Archive ----
@@ -64,7 +134,7 @@ a.read-more::after {
 
 .archive-year {
   position: sticky;
-  top: 0;
+  top: 55px;
   z-index: 10;
   display: flex;
   align-items: baseline;
@@ -87,6 +157,8 @@ a.read-more::after {
 }
 
 .archive-item {
+  list-style: none;
+
   border-bottom: 1px solid var(--pico-muted-border-color);
 
   &:last-child {
@@ -121,10 +193,6 @@ a.read-more::after {
       time {
         color: var(--pico-primary);
       }
-
-      .archive-title {
-        transform: translateX(4px);
-      }
     }
 
     @media (max-width: 640px) {
@@ -137,6 +205,36 @@ a.read-more::after {
       }
     }
   }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .archive-item a:hover .archive-title {
+    transform: translateX(4px);
+  }
+}
+
+// ---- Footer ----
+footer {
+  text-align: center;
+  margin-top: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  border-top: 1px solid var(--pico-muted-border-color);
+
+  .svg-icon {
+    opacity: 0.8;
+    transition: opacity 0.15s ease;
+  }
+
+  a:hover .svg-icon {
+    opacity: 1;
+  }
+}
+
+.footer-copy {
+  margin: 14px 0 0;
+  font-size: 13px;
+  color: var(--pico-muted-color);
 }
 
 // ---- Misc ----
