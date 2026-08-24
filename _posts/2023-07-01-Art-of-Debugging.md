@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Art of Debugging"
-date:   2023-07-01 01:22:00
+date:   2023-07-01 01:22:00 +0530
 categories: [Architecture]
 excerpt_separator: "<!--more-->"
 ---

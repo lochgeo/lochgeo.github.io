@@ -2,6 +2,7 @@
 layout: post
 title:  Code snippets in a blog post
 categories: [Miscellaneous]
+date:   2019-08-24 12:00:00 +0530
 ---
 
 This post demonstrate the use of code snippets in the theme. The code snippets are powered by [Pygments](http://pygments.org/) and the code theme that is been used in Reverie is called [Draula](https://draculatheme.com/).

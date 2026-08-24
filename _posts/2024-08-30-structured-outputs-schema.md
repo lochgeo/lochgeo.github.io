@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Structured Outputs - When Valid JSON Is Not Enough"
-date:   2024-08-30 14:18:00
+date:   2024-08-30 14:18:00 +0530
 comments: True
 categories: [Generative AI]
 excerpt_separator: "<!--more-->"

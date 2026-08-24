@@ -50,6 +50,10 @@ enforce_ssl: https://lochgeo.github.io
 
 permalink: /:title/
 
+# Interpret and render all dates in Indian Standard Time (+0530), regardless
+# of the build machine's local timezone.
+timezone: Asia/Kolkata
+
 # Reading list collection (separate from blog posts)
 collections:
   reading:

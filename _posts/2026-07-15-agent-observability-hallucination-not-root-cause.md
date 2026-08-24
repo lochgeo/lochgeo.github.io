@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Agent Observability - 'It Hallucinated' Is Not a Root Cause"
-date:   2026-07-15 09:41:00
+date:   2026-07-15 09:41:00 +0530
 comments: True
 categories: [Software, Observability]
 excerpt_separator: "<!--more-->"

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Software Architectures"
-date:   2023-01-10 10:22:00
+date:   2023-01-10 10:22:00 +0530
 categories: [Architecture]
 ---
 

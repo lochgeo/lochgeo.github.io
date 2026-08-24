@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Local LLMs - The Model That Never Leaves My Laptop"
-date:   2023-11-30 14:27:00
+date:   2023-11-30 14:27:00 +0530
 comments: True
 categories: [Generative AI]
 excerpt_separator: "<!--more-->"

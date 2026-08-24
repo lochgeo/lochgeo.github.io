@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "o1 - When the Model Starts Thinking Before Answering"
-date:   2024-11-06 09:47:00
+date:   2024-11-06 09:47:00 +0530
 comments: True
 categories: [Generative AI]
 excerpt_separator: "<!--more-->"

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "RAG - When Retrieval Is the Bug, Not the Model"
-date:   2024-02-06 11:18:00
+date:   2024-02-06 11:18:00 +0530
 comments: True
 categories: [Generative AI]
 excerpt_separator: "<!--more-->"

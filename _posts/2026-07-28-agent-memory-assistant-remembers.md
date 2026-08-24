@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Agent Memory - When Your Assistant Remembers Too Much (Or Too Little)"
-date:   2026-07-28 09:30:00
+date:   2026-07-28 09:30:00 +0530
 comments: True
 categories: [Software, Generative AI]
 excerpt_separator: "<!--more-->"

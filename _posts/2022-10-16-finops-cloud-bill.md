@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "FinOps - When the Cloud Bill Stops Being Weather"
-date:   2022-10-16 14:22:00
+date:   2022-10-16 14:22:00 +0530
 comments: True
 categories: [Cloud]
 excerpt_separator: "<!--more-->"

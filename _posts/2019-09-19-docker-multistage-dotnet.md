@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Fat Images and Thin Runtimes - Multi-stage Docker for .NET Core"
-date:   2019-09-19 19:34:00
+date:   2019-09-19 19:34:00 +0530
 categories: [Containers & Kubernetes]
 excerpt_separator: "<!--more-->"
 ---

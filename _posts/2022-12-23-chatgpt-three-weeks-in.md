@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "ChatGPT - Three Weeks In and I'm Still Checking Everything"
-date:   2022-12-23 10:34:00
+date:   2022-12-23 10:34:00 +0530
 comments: True
 categories: [Generative AI]
 excerpt_separator: "<!--more-->"

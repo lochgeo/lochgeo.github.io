@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Local Models - My Laptop Is Running Production Now"
-date:   2026-05-07 08:12:00
+date:   2026-05-07 08:12:00 +0530
 comments: True
 categories: [Generative AI]
 excerpt_separator: "<!--more-->"

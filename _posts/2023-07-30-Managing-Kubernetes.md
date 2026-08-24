@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Managing Kubernetes using Rancher"
-date:   2023-07-30 01:22:00
+date:   2023-07-30 01:22:00 +0530
 categories: [Containers & Kubernetes]
 excerpt_separator: "<!--more-->"
 ---

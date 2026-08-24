@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Circuit Breakers - Stop Calling a Service That Is Already On Fire"
-date:   2023-07-16 11:34:00
+date:   2023-07-16 11:34:00 +0530
 comments: True
 categories: [Architecture]
 excerpt_separator: "<!--more-->"

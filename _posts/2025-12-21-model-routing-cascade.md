@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Model Routing - Stop Sending Everything to the Expensive Model"
-date:   2025-12-21 09:47:00
+date:   2025-12-21 09:47:00 +0530
 comments: True
 categories: [Generative AI]
 excerpt_separator: "<!--more-->"

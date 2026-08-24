@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Prompt Injection - The Longer the Context, the Bigger the Attack Surface"
-date:   2024-04-15 10:34:00
+date:   2024-04-15 10:34:00 +0530
 comments: True
 categories: [Security]
 excerpt_separator: "<!--more-->"

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Internal Developer Portals - Stop Asking Slack Who Owns That Service"
-date:   2022-08-08 10:37:00
+date:   2022-08-08 10:37:00 +0530
 comments: True
 categories: [Architecture]
 excerpt_separator: "<!--more-->"

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Open Telemetry - The Future of Observability?"
-date:   2022-11-08 12:22:00
+date:   2022-11-08 12:22:00 +0530
 categories: [Observability]
 ---
 

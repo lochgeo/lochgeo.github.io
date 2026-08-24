@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Vibe Coding - Somebody Still Has to Read the Diff"
-date:   2025-05-30 09:41:00
+date:   2025-05-30 09:41:00 +0530
 comments: True
 categories: [Generative AI]
 excerpt_separator: "<!--more-->"

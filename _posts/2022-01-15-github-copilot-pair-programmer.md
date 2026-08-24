@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "GitHub Copilot - My Pair Who Never Sleeps (And Sometimes Hallucinates)"
-date:   2022-01-15 11:18:00
+date:   2022-01-15 11:18:00 +0530
 comments: True
 categories: [Generative AI]
 excerpt_separator: "<!--more-->"

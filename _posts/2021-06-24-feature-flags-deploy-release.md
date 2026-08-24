@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Feature Flags - Deploy Dark, Release When Ready"
-date:   2021-06-24 20:14:00
+date:   2021-06-24 20:14:00 +0530
 comments: True
 categories: [Architecture]
 excerpt_separator: "<!--more-->"
