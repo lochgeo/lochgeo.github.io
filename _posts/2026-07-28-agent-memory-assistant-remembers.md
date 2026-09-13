@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Agent Memory - When Your Assistant Remembers Too Much (Or Too Little)"
+title:  "Agent Memory Is the New Capacity Planning"
 date:   2026-07-28 09:30:00 +0530
 comments: True
 categories: [Software, Generative AI]

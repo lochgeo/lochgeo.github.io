@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Eval-Driven Development - When Your Tests Are LLMs"
+title:  "I Don't Ship Agents Without an Eval Gate"
 date:   2026-08-24 09:45:00 +0530
 comments: True
 categories: [Software, Generative AI]

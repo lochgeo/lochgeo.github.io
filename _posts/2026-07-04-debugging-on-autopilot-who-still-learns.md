@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Debugging on Autopilot - Who Is Still Learning the Codebase?"
+title:  "The Agent Found the Bug, I Carried the Coffee"
 date:   2026-07-04 10:15:00 +0530
 comments: True
 categories: [Software, AI]

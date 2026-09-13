@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Backpressure - Learning to Say No Before the Queue Says It for You"
+title:  "What a Packed Room Taught Me About Backpressure"
 date:   2026-08-06 10:15:00 +0530
 comments: True
 categories: [Software, Architecture]
