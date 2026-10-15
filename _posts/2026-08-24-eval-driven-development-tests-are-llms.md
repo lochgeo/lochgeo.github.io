@@ -87,7 +87,7 @@ Disciplined teams spend **$8–60 per 1,000 traces** on evaluation all-in. That 
 2. **Classifier fallback** — LlamaGuard 3 1B or Qwen3Guard 0.6B at single-digit ms latency for safety/toxicity
 3. **LLM-judge only on cases needing semantic scoring** — the expensive call, reserved for the uncertain 10–20%
 
-Arize's August cost guide confirms: production eval cost extends beyond judge tokens. Trace volume, evaluator coverage, workflow depth, human review, and retention all contribute. Control through sampling, filtering, selective scoring surfaces, and evaluator routing.
+Arize's August cost guide confirms: production eval cost extends beyond judge tokens. Trace volume, evaluator coverage, workflow depth, human review, and retention all contribute. Control costs through sampling, filtering, selective scoring surfaces, and evaluator routing.
 
 In my shop, a custom eval dataset (5K–10K examples reflecting our actual margin rules and client phrasings) cost ~$35K to build and ~$10K/yr to maintain. Integration overhead (CI pipelines, trace storage, dashboarding) added another 20%. The first time the gate caught a prompt regression before it hit a relationship manager, it paid for the year.
 
@@ -139,6 +139,6 @@ The defense is a **budget per 1,000 traces, set before you build**. Keep the pat
 
 If you are building agents in 2026, "what's your eval architecture?" is as standard a question as "what's your test coverage?" was in 2015. The answer shapes your cost model, your compliance posture, and your user experience in ways that are hard to refactor later.
 
-My pragmatic take: start with DeepEval in your test suite and Promptfoo for prompt regression. Add LangSmith or Braintrust when traffic justifies the SOC 2 ticket. Instrument the eval operations from day one — pass rates, judge agreement, regression events, cost per 1k traces. Treat them like database queries. Because that is exactly what they are.
+My pragmatic take: start with DeepEval in your test suite and Promptfoo for prompt regression. Add LangSmith or Braintrust when traffic justifies the SOC 2 ticket. Instrument the eval operations from day one — pass rates, judge agreement, regression events, cost per 1k traces. Treat them like database queries, because that is exactly what they are.
 
 The prompt tweak that hallucinated a Basel III clause? It never reached a client. The eval gate caught it at 2:47 PM on a Friday. The build failed. The author saw the diff, reverted the "helpful tone" instruction, and the gate passed. Monday morning was boring. That is the goal.
