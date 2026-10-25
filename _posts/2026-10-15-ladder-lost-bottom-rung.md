@@ -25,7 +25,7 @@ I have a pet theory for why, drawn from my own reviews. The work did not vanish;
 
 ### The rung that is actually missing
 
-That brings me to the juniors, and the part that worries me more than any benchmark. Think about what junior work actually was for most of us: boilerplate, small bugfixes, writing the tests nobody wanted to write, renaming things across a module. Boring? Often. But those were reps. That is how you learn what a transaction boundary is, what a misleading stack trace smells like, what "done" means in a codebase with real users. I learned debugging the way you learn swimming — by being thrown in the shallow end a few hundred times.
+That brings me to the juniors, and the part that worries me more than any benchmark. What junior work actually was for most of us: boilerplate, small bugfixes, writing the tests nobody wanted to write, renaming things across a module. Boring? Often. But those were reps. That is how you learn what a transaction boundary is, what a misleading stack trace smells like, what "done" means in a codebase with real users. I learned debugging the way you learn swimming — by being thrown in the shallow end a few hundred times.
 
 If agents now do the shallow-end work, where do the reps come from? A team can absolutely run with fewer programmers per unit of software. What I cannot picture is a team with zero juniors growing its own seniors. Hiring only seniors works until you ask where the next batch of seniors is supposed to come from. It is the classic move of eating your seed corn and calling it efficiency.
 
@@ -41,7 +41,7 @@ More useful still is how they interview now, using a framework borrowed from the
 - AI optional. Do you know when to reach for the tool — and when to keep thinking on your own first?
 - AI mandatory. The task is too big for the time. Scope it, prompt it, validate it, ship it.
 
-Read that list again. It is not just an interview loop; it is a curriculum. Hand that to a junior and you have basically described what "learning deeply" means in 2026: the fundamentals, the judgment of when to automate, and the craft of driving the machine hard. Their VP admits nobody has figured out evaluation fully yet, which is the most honest sentence in the whole piece.
+That list is not just an interview loop; it is a curriculum. Hand that to a junior and you have basically described what "learning deeply" means in 2026: the fundamentals, the judgment of when to automate, and the craft of driving the machine hard. Their VP admits nobody has figured out evaluation fully yet, which is the most honest sentence in the whole piece.
 
 ### My bet
 

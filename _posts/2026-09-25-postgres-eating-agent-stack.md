@@ -19,7 +19,7 @@ The first consolidation happened quietly. Instead of running a separate vector d
 
 Supabase's pgvector toolkit is the clearest version of this: store the embedding in a `vector` column, index it with HNSW or IVFFlat, query with cosine or inner-product operators, and — this is the part that sold me — combine it with plain SQL. A similarity search with a `WHERE tenant_id = ...` and a `JOIN` to the orders table is one query, not a distributed transaction across two systems. Their docs list 44 million databases created and 200,000 launching daily, so this is not a lab trick anymore.
 
-Databricks did the same thing for Lakebase this June. Their release notes for June 16 describe Lakebase Search in beta: a `lakebase_vector` extension that speaks the same types and operators as pgvector but uses its own ANN index, plus a `lakebase_text` extension for BM25 keyword search. One database, semantic plus exact-term search, no sidecar search cluster. The indexes are storage-backed, so they survive a scale-to-zero nap without a warmup penalty. I read that detail twice, because anyone who has paid for a search cluster to sit idle over a weekend knows exactly what it costs.
+Databricks did the same thing for Lakebase this June. Their release notes for June 16 describe Lakebase Search in beta: a `lakebase_vector` extension that speaks the same types and operators as pgvector but uses its own ANN index, plus a `lakebase_text` extension for BM25 keyword search. One database, semantic plus exact-term search, no sidecar search cluster. The indexes are storage-backed, so they survive a scale-to-zero nap without a warmup penalty. I read that detail twice, because anyone who has paid for a search cluster to sit idle over a weekend knows the cost.
 
 ### Branches are the new migrations
 
@@ -31,7 +31,7 @@ Neon's about page carries the line that stopped me scrolling: 80% of their datab
 
 ### Postgres learned Kubernetes
 
-The third piece is the one I waited longest for. Running stateful Postgres on Kubernetes used to be the thing everyone warned you about at meetups, right after running your own email.
+The third piece is the one I waited longest for. Running stateful Postgres on Kubernetes used to be the thing meetup veterans warned about, right after running your own email.
 
 CloudNativePG fixed that by going fully declarative: you describe the cluster — primary plus standbys, replication, credentials, a bit of config — and the operator reconciles it, including failover, with no external failover manager. It joined the CNCF as a Sandbox project in January last year, and 1.30 landed this June. The CNCF page now calls it the most popular Kubernetes operator for PostgreSQL, and for once the marketing matches the hallway track.
 
