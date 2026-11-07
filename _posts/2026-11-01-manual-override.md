@@ -7,7 +7,7 @@ categories: [Software, AI]
 excerpt_separator: "<!--more-->"
 ---
 
-A few weeks ago I watched a video with a title that sounds like a taunt: "AI Was Supposed To Take Your Job. Why Hasn't It?" (Maxinomics, July 2026). Halfway through it, it dropped a fact I could not shake off. The US census has been cataloguing occupations for over a century, and for all the noise about machines eating work, history contains only **one** job that a single technology completely erased: the lift operator. Meanwhile the airline pilot — whose routine flying has been largely handed over to computers for decades — is more in demand than ever. Same big wave of automation. Two jobs. Opposite outcomes.
+A few weeks ago I watched a video with a title that sounds like a taunt: "AI Was Supposed To Take Your Job. Why Hasn't It?" (Maxinomics, July 2026). Halfway through, it dropped a fact I could not shake off. The US census has been cataloguing occupations for over a century, and for all the noise about machines eating work, history contains only **one** job that a single technology completely erased: the lift operator. Meanwhile the airline pilot — whose routine flying has been largely handed over to computers for decades — is more in demand than ever. Same big wave of automation. Two jobs. Opposite outcomes.
 
 <!--more-->
 
