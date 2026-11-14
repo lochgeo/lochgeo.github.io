@@ -47,4 +47,4 @@ That list is not just an interview loop; it is a curriculum. Hand that to a juni
 
 Fewer programmers per unit of software is fine. It might even be great — software that was never worth writing at old prices now gets written. But zero juniors per team is a slow-motion disaster, and it will not show up in any quarterly metric until the seniors start retiring and there is nobody ready behind them.
 
-If I were hiring today, I would steal the Waterloo three modes outright, and I would hire the junior who can answer the first one. The agent can write the code. Somebody still has to understand it, sign the PR, and still be around — and be senior — in five years.
+If I were hiring today, I would steal the Waterloo three modes outright, and I would hire the junior who can answer the first one. The agent can write the code. Somebody still has to understand it, sign the PR, and be around — and be senior — in five years.
