@@ -30,7 +30,7 @@ Pushing back on a calcified default takes some skill. In my experience, pushback
 
 Even then, it sometimes backfires. You raise a real issue at the wrong moment, without enough history, or in a room that isn't ready to hear it. That doesn't mean your instinct was wrong; it usually tells you the culture around feedback is brittle, which is useful information in itself. Not every friction is as blatantly obvious as a ten-second VDI lag, which is why teams need people willing to keep pointing at the quieter problems with data in hand.
 
-### Culture is the defaults we stop questioning
+### Culture is the default we stop questioning
 
 If I want to know what a team's engineering culture actually looks like, I don't read the values deck. I watch what people do when the day is busy and something rubs the wrong way. A deploy drags on — does everyone just alt-tab to Teams and wait, or does someone ask why it's slow? A flaky test fails for the third time this week — do we hit rerun and merge anyway, or do we treat a lying test suite as a real bug? A manual script saves an outage once, then twice, and before anyone notices it's the official release process.
 
