@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Three People, One Problem"
-date:   2026-11-14 11:37:45 +0530
+date:   2026-11-13 11:37:45 +0530
 comments: True
 categories: [Software, Generative AI]
 excerpt_separator: "<!--more-->"
