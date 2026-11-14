@@ -7,7 +7,7 @@ categories: [Experiences, Thoughts]
 excerpt_separator: "<!--more-->"
 ---
 
-We went out for dinner last night to take a break from work for a few hours, had a few beers, and ended up talking about engineering culture the entire time. Despite the drinks — or maybe because of them — everyone at the table was sharp, opening up about things that usually get smoothed over in daytime meetings.
+We went out for dinner last night to take a break from work for a few hours — helped along by a global MS Teams and Outlook outage yesterday that had everyone joking we finally got to go out for dinner thanks to Outlook being down. A few beers in, of course, we ended up talking about engineering culture the entire time anyway. Despite the drinks — or maybe because of them — everyone at the table was sharp, opening up about things that usually get smoothed over in daytime meetings.
 
 At one point the conversation turned to VDIs — the remote virtual desktops many of us had to use while working for American companies from India. You'd log onto your base laptop, open the VDI window, and wait. You'd type a line of code and sometimes it would take ten or fifteen seconds for the characters to show up on screen. A friend at the table joked that in that gap you basically had time to pray — pray that the text showed up at all, and hadn't just vanished into the void.
 
@@ -32,7 +32,7 @@ Even then, it sometimes backfires. You raise a real issue at the wrong moment, w
 
 ### Culture is the defaults we stop questioning
 
-If I want to know what a team's engineering culture actually looks like, I don't read the values deck. I watch what people do when the day is busy and something rubs the wrong way. A deploy drags on — does everyone just alt-tab to Slack and wait, or does someone ask why it's slow? A flaky test fails for the third time this week — do we hit rerun and merge anyway, or do we treat a lying test suite as a real bug? A manual script saves an outage once, then twice, and before anyone notices it's the official release process.
+If I want to know what a team's engineering culture actually looks like, I don't read the values deck. I watch what people do when the day is busy and something rubs the wrong way. A deploy drags on — does everyone just alt-tab to Teams and wait, or does someone ask why it's slow? A flaky test fails for the third time this week — do we hit rerun and merge anyway, or do we treat a lying test suite as a real bug? A manual script saves an outage once, then twice, and before anyone notices it's the official release process.
 
 I see this constantly with CI pipelines. A build that takes thirty or forty-five minutes starts to feel normal because *"it's running all the static analysis and security scans."* Engineers plan their coffee breaks around it, context-switch onto a second ticket, lose their train of thought, and accept the wait as the price of being thorough. I don't buy that. Thorough checks matter, especially in regulated environments, but a forty-minute feedback loop is still a capability problem. It is always worth asking: what truly needs to run on every commit, what can be cached or parallelised, what belongs in a later stage, and what is this wait actually costing us in broken focus?
 
